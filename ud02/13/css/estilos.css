@@ -1,0 +1,87 @@
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+
+}
+ul,ol{
+	list-style:none;}
+	a{text-decoration:none; color:black;}
+@font-face{
+		font-family :Fa;
+		src:url(../fonts/webfonts/fa-solid-900.ttf);
+	}
+	@font-face{
+		font-family :FontAwesome;
+		src:url(../fonts/webfonts/fa-solid-900.woff),url(../fonts/webfonts/fa-solid-900.ttf),(../fonts/webfonts/fa-solid-900.eot),(../fonts/webfonts/fa-solid-900.woff2);
+	}
+@font-face{
+	font-family : Goldman;
+	src: url(../fonts/Goldman-Regular.ttf);
+	}
+	@font-face{
+	font-family : Architects Daughter;
+	src: url(../fonts/ArchitectsDaughter/ArchitectsDaughter-Regular.ttf);
+	}
+	@font-face{
+	font-family : FrederickattheGreat;
+	src: url(../fonts/FrederickatheGreat/FrederickatheGreat-Regular.ttf);
+	}
+	@font-face{
+	font-family : Parisienne;
+	src: url(../fonts/Parisienne-Regular.ttf);
+	}
+
+header{
+	font-family : Fa;
+	text-align:center;
+}
+header h1{ font-size: 30px; padding:25px;}
+header h2{ font-size: 25px; padding:20px;}
+header h2:after{
+	
+}
+header h3{ font-size: 20px; padding:15px;}
+header h4{ font-size: 15px; padding:10px;}
+
+nav li{
+	display:inline-block;
+}
+nav a{padding:20px;}
+nav a:hover{background-color:grey; color:white; padding:20px; width:85px;}
+section { width:33.33%; float:left;}
+main:after{
+	content:"";
+	display: table;
+	clear: both;
+}
+footer{
+	text-align:center;
+	padding:10px;
+}
+
+article{margin: 0px 10px 2px 0px;
+	background-color:grey;
+	border-radius:5%;
+}
+article header{color:white;}
+article .content{position:relative; padding-left: 130px;}
+article figure{position:absolute; left:2px; top:2px;}
+article img{width:120px; height:120px;}
+figcaption{
+	text-align:center;
+	font-size:8px;
+	font-family: cursive;
+}
+article footer{
+	padding:10px;
+	margin-left:60%;
+	text-align:center;
+	}
+
+
+
+
+
+

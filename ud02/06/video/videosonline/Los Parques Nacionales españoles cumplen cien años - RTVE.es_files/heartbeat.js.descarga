@@ -1,0 +1,138 @@
+/* HEARBEAT */
+
+var MediaHeartbeat = ADB.va.MediaHeartbeat;
+var MediaHeartbeatConfig = ADB.va.MediaHeartbeatConfig;
+var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate;
+
+// Medición multiplayer
+var listMediaHeartbeat = [];
+
+function getPlayerId(assetId){
+	var playerId = false;
+	var listPlayers = RTVE.RtvePlayerBoxFactory.getAll();
+
+	for(var propertyName in listPlayers) { 
+		if (RTVE.RtvePlayerBoxFactory.getById(propertyName) 
+			&& RTVE.RtvePlayerBoxFactory.getById(propertyName).rtvePlayer
+			&& RTVE.RtvePlayerBoxFactory.getById(propertyName).rtvePlayer.options.assetId==assetId){
+				playerId = propertyName;
+		}
+	}
+
+	return playerId;
+}
+
+function getPlayerPlaying(){
+	var players = videojs.players;
+	var unPlayer = false;
+	for(key in players){
+		unPlayer = players[key];
+		if (!unPlayer.paused()){
+			return key;
+		}
+	}
+
+	return false;
+}
+
+/*
+	dataLayer.filter(function(e){ return e.event=="PRIMER_PLAY" })
+*/
+
+function getMediaHeartbeat(assetId, channel, s){
+
+	var salida = false;
+	var isLab = false;
+
+	if (!assetId){
+		isLab = true;
+		assetId = getPlayerPlaying();
+	}
+	
+	if (!listMediaHeartbeat[assetId] && channel!=undefined && s!=undefined){
+
+		//se crea uno nuevo
+		var mediaConfig = new MediaHeartbeatConfig();
+		mediaConfig.trackingServer = 'rtve.hb.omtrdc.net';
+		mediaConfig.playerName = 'RTVE_Web_Player';
+		mediaConfig.channel = channel;
+		mediaConfig.debugLogging = false; //true en entornos no productivos, false en PRO
+		mediaConfig.appVersion = 'Media SDK JS v2.2.0'; //Version of the video player app/SDK
+		mediaConfig.ssl = true;
+		mediaConfig.ovp = ''; //online video platform
+
+		var mediaDelegate = new MediaHeartbeatDelegate();
+		// Replace <currentPlaybackTime> with the video player current playback time
+		mediaDelegate.getCurrentPlaybackTime = function() {
+
+			if (isLab){
+				//LAB
+				var listaPlayers = videojs.players;
+				if (listaPlayers[assetId] && typeof listaPlayers[assetId].currentTime === 'function'){
+					return listaPlayers[assetId].currentTime();
+				}
+
+				return 0;
+			}
+
+			var playerId = getPlayerId(assetId);
+			if (playerId){
+				return RTVE.RtvePlayerBoxFactory.getById(playerId).rtvePlayer.player().currentTime();
+			}
+			else{
+				//No existe el player >> END
+				if (listMediaHeartbeat[assetId]){
+					setTimeout(function(){ 
+
+						var mediaHearbeatDestroy = listMediaHeartbeat[assetId];
+						if (mediaHearbeatDestroy){
+							mediaHearbeatDestroy.trackSessionEnd();
+							delete listMediaHeartbeat[assetId];
+						}
+
+					}, 5000);
+				}
+			}
+			
+			return 0;    
+		};
+
+		//Metricas de calidad
+		mediaDelegate.getQoSObject = function() {
+
+			var bitrate = 0;
+			var startuptime = 0;
+			var fps = 0;
+			var droppedFrames = 0;
+
+			if (!isLab){
+				//NO LAB
+
+				var playerId = getPlayerId(assetId);
+				if (playerId){
+
+					var playerAux = RTVE.RtvePlayerBoxFactory.getById(playerId).rtvePlayer.player();
+					if (typeof playerAux.getVideoPlaybackQuality === 'function'){
+						var playbackQuality = playerAux.getVideoPlaybackQuality();
+						droppedFrames = playbackQuality.droppedVideoFrames;
+
+						var currentTime = playerAux.currentTime();
+						if (currentTime>0){
+							var frames = playbackQuality.totalVideoFrames;
+							fps = Math.round(frames/currentTime);
+						}
+					}
+				}
+			}
+			
+		    return MediaHeartbeat.createQoSObject(bitrate, startuptime, fps, droppedFrames);
+		};
+
+		salida = new MediaHeartbeat(mediaDelegate, mediaConfig, s);
+		listMediaHeartbeat[assetId] = salida;
+	}else{		
+		salida = listMediaHeartbeat[assetId];
+	}
+
+	return salida;
+}

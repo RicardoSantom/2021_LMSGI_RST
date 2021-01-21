@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--Autor:Ricardo Santiago Tomé  Fecha de creación.27/10/2020  Fecha última modificación:07/11/2020-->
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="description" content="Esta página web es un formulario para probar etiquetas">
+			<meta name="author" content="Ricardo Santiago Tomé-1ºDAW">
+			<meta name="Keywords" content="parquesnacionales,naturaleza,parques,visitanaturaleza,escapadanaturaleza">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="generator" content="notepad++">
+			<link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+			<link rel="shortcut icon" href="../../images/favicon.ico">
+				<link rel="stylesheet" href="css/style.css"><!--etiqueta link, implementada más abajo.-->
+				<style> 
+	
+        table { 
+		
+		width:100%;
+			
+            border-collapse: collapse; 
+
+        } 
+		
+		
+        th, 
+
+        td { 
+																								  
+            border: 0px solid black; 
+
+            padding: 20px; 
+
+        } 
+	</style> 
+			<title>HTML 05 Ricardo Santiago Tomé</title>
+		</head>
+		<body>
+			<main><header><h1 style="text-align:center">Plantilla de formulario de Parques Nacionales</h1></header>
+				<h2 style="text-align:center">Planificación visita a santuarios de la naturaleza en España</h2>
+				<form action="2registro.php" method="POST">
+						<fieldset style="background-color: #AAAAAA">
+						<legend style="border: 1px solid black; background-color: white">Lista parques nacionales de España</legend>
+				<table>
+					<tbody>
+							<tr>
+								<td>
+										<label for="idcuantos">MINITEST--¿Cuántos conoces?</label>
+										<ul style=list-style:none;>
+											<li>
+												<label for="idPicosDeEuropa">
+													<input type="checkbox" name="PicosDeEuropa" value="PicosDeEuropa" id="idPicosDeEuropa">Picos De Europa
+												</label>
+											</li>
+											<li>
+												<label for="idOrdesaYMontePerdido">
+													<input type="checkbox" name="OrdesaYMontePerdido" value="OrdesaYMontePerdido" id="idOrdesaYMontePerdido">Ordesa Y Monte Perdido
+												</label>
+											</li>
+											<li>
+												<label for="idTeide">
+													<input type="checkbox" name="Teide" value="Teide" id="idTeide">Teide
+												</label>
+											</li>
+											<li>
+												<label for="idCalderaDeTaburiente">
+													<input type="checkbox" name="CalderaDeTaburiente" value="CalderaDeTaburiente" id="idCalderaDeTaburiente">Caldera De Taburiente
+												</label>
+											</li>
+											<li>
+												<label for="idAiguasTortasYLagoDeSanMauricio">
+													<input type="checkbox" name="AiguasTortasYLagoDeSanMauricio" value="AiguasTortasYLagoDeSanMauricio"  id="idAiguasTortasYLagoDeSanMauricio">Aiguas Tortas Y Lago De San Mauricio
+												</label>
+											</li>
+											<li>
+												<label for="idDoñana">
+													<input type="checkbox" name="cuantos" value="Doñana" id="idDoñana">Doñana
+												</label>
+											</li>
+											<li>
+												<label for="idTablasDeDaimiel">
+													<input type="checkbox" name="TablasDeDaimiel" value="TablasDeDaimiel" id="idTablasDeDaimiel">Tablas De Daimiel
+												</label>
+											</li>
+											<li>
+												<label for="idTimanfaya">
+													<input type="checkbox" name="Timanfaya" value="Timanfaya" id="idTimanfaya">Timanfaya
+												</label>
+											</li>
+											<li>
+												<label for="idGarajonay">
+													<input type="checkbox" name="Garajonay" value="Garajonay" id="idGarajonay">Garajonay
+												</label>
+											</li>
+											<li>
+												<label for="idArchipielagoDeCabrera">
+													<input type="checkbox" name="ArchipielagoDeCabrera" value="ArchipielagoDeCabrera" id="idArchipielagoDeCabrera">Archipielago De Cabrera
+												</label>
+											</li>
+											<li>
+												<label for="idCabañeros">
+													<input type="checkbox" name="Cabañeros" value="Cabañeros" id="idCabañeros">Cabañeros
+												</label>
+											</li>
+											<li>
+												<label for="idSierraNevada">
+													<input type="checkbox" name="SierraNevada" value="SierraNevada" id="idSierraNevada">Sierra Nevada
+												</label>
+											</li>
+											<li>
+												<label for="idIslasAtlanticas">
+													<input type="checkbox" name="IslasAtlanticas" value="IslasAtlanticas" id="idIslasAtlanticas">Islas Atlánticas de Galicia
+												</label>
+											</li>
+											<li>
+												<label for="idMonfragüe">
+													<input type="checkbox" name="Monfrague" value="Monfragüe" id="idMonfragüe">Monfrague
+												</label>
+											</li>
+											<li>
+												<label for="idGuadarrama">
+													<input type="checkbox" name="Gua" value="Guadarrama" id="idGuadarrama">Guadarrama
+												</label>
+											</li>
+										</ul>
+											<label for ="idnumero">He conocido:(seleccione número)
+												<input type="number" name="numero" id="idnumero" value="15" min="0" max="15" step="1">
+											</label>
+									</td>
+								<td>
+									<figure >
+											<a href="https://i2.wp.com/www.casaruralcabaneros.com/wp-content/uploads/2018/10/parque-nacional-en-espa%C3%B1a.jpg?resize=1080%2C675&ssl=1">
+												<img  alt="Imagen de diferentes parques nacionales españoles" src="https://i2.wp.com/www.casaruralcabaneros.com/wp-content/uploads/2018/10/parque-nacional-en-espa%C3%B1a.jpg?resize=1080%2C675&ssl=1" style="border: 5px solid black;" width="600">
+											</a>
+										<figcaption>Instantaneas parques nacionales de España.Original por
+											<a href="https://i2.wp.com/www.casaruralcabaneros.com/wp-content/uploads/2018/10/parque-nacional-en-espa%C3%B1a.jpg?resize=1080%2C675&ssl=1">Diversos autores</a>
+										</figcaption>
+									</figure>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					</fieldset>
+					<fieldset style="background-color: 	#F0F8FF">
+						<legend style="border: 1px solid black; background-color: white">Datos personales y medio de contacto</legend>
+						<table>
+							<thead>
+								<tr>
+									<td colspan=2>
+										Déjanos tus datos si estás interesado en visitar alguna de estas joyas de la naturaleza:
+									</td>
+									<th>
+										<p>Elige tu próxima visita----></p>
+									</th>
+									<td>
+										<select id="idcuantos" multiple>
+											<option value="PicosDeEuropa">Picos De Europa</option>
+											<option value="OrdesaYMontePerdido">Ordesa Y Monte Perdido</option>
+											<option value="Teide">Teide</option>
+											<option value="CalderaDeTaburiente">Caldera De Taburiente</option>
+											<option value="AiguasTortasYLagoDeSanMauricio">Aigüas Tortas Y Lago De San Mauricio</option>
+											<option value="Doñana">Doñana</option>
+											<option value="TablasDeDaimiel">Tablas De Daimiel</option>
+											<option value="Timanfaya">Timanfaya</option>
+											<option value="Garajonay">Garajonay</option>
+											<option value="ArchipielagoDeCabrera">Archipielago De Cabrera</option>
+											<option value="Cabañeros">Cabañeros</option>
+											<option value="SierraNevada">Sierra Nevada</option>
+											<option value="IslasAtlanticas">Islas Atlánticas De Galicia</option>
+											<option value="Monfragüe">Monfragüe</option>
+											<option value="Guadarrama">Sierra De Guadarrama</option>
+										</select>
+									</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<label for="idnombre">Nombre
+											<input type="text" name="nombre" id="idnombre">
+										</label>
+									</td>
+									<td>
+										<label for="idapellidos">Apellidos
+											<input type="text" name="apellidos" id="idapellidos">
+										</label>
+									</td>
+									<td>
+										<label for="idnacimiento">Fecha de nacimiento
+											<input type="date" name="nacimiento"  min="1900-01-01" id="idnacimiento">
+										</label>
+									</td>
+									<td>
+										<label for="idhora">
+											<input type="time" name="hora"  min="08:30" max="14:00" value="08:30" id="idhora">Selecciona hora para llamada
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td colspan=2>
+										<ul style=list-style:none;>
+											<li>
+												<label for="idmovil">
+													<input type="radio" name="opcion" value="movil" id="idmovil">Mejor por teléfono
+												</label>
+												<p>
+													<input type="hidden" name="usuario-prefiere-movil" value="movil">
+												</p>
+												<label for="idtelefono">
+													<input type="text" name="telefono"  id="idtelefono" pattern="\([0-9]{3}) [0-9]{3} [-][0-9]{3}" placeholder="(000)000-000" required />(requerido)
+												</label>
+											</li>
+											<li>
+												<label for="idemail">
+													<input type="radio" name="opcion" value="email" id="idemail">Prefiero e-mail
+												</label>
+												<p>
+													<input type="hidden" name="usuario-prefiere-correo" value="email">
+												</p>
+												<label for="idcorreo">
+													<input type="text" name="correo" id="idcorreo" placeholder="pericolospalotes@cuentacorreo.com" size=40>
+												</label>
+											</li>
+										</ul>
+									</td>
+									<td colspan=2>
+										<label for="idsemana">Semana preferida para visita
+											<input type="week" name="semana" id="idsemana" required>(requerido)
+										</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</fieldset>
+					<fieldset style="background-color:#E0FFFF">
+							<legend style="border: 1px solid black; background-color: white">Cuéntanos como te fué en anteriores visitas</legend>
+							<table>
+								<tbody>
+									<tr>
+										<td>	
+											<label for="idmes">
+												<input type="month" id="idmes" name="mes">¿Recuerdas cuándo fué?
+											</label>
+										</td>
+										<td>
+											<label for="idrango">Del 1 al 3 ¿Cómo fué tu experiencia?
+												<input type="range" id="idrango" name="rango" min="1" max="3" step="1">1=No muy buena 2=Buena 3=¡Genial!
+											</label>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Elige medio principal para búsqueda de información:
+												<input type="search" name="medios" list="lstmedios">
+												<input type="submit" value="Buscar">
+											</p>
+											<datalist id="lstmedios">
+												<option value="Casa del parque"></option>
+												<option value="Sitio Web del parque"></option>
+												<option value="Oficina de turismo local"></option>
+												<option value="Bibliografía especilizada"></option>
+												<option value="Boca a boca"></option>
+												<option value="Televisión"></option>
+												<option value="Radio"></option>
+												<option value="Prensa escrita"></option>
+												<option value="Ninguna de las anteriores"></option>
+											</datalist>
+										</td>
+										<td>
+											<p>CON TUS PROPIAS PALABRAS:
+											<textarea name="Valoración experiencia" rows=10 cols=30>
+											Comentario a continuación:
+											</textarea>
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+					</fieldset>
+					<fieldset>
+								<a href="https://www.parquesnacionales.org/"><h3 style="text-align:center">Para más información...</h3>								
+								</a>	
+							<label for="idcontraseña">Para usuarios registrados, te evitará el paso de volver a registrarte.
+											Contraseña:
+								<input type="password" name="pass" id="idcontraseña" pattern="[A-Za-z][A-Za-z0-9]*[0-9][A-Za-z0-9]{7}*"
+									title="Una contraseña válida es un conjuto de caracteres, donde cada uno consiste de una letra mayúscula o minúscula, o un dígito. La contraseña debe empezar con una letra y contener al menos un dígito" 
+									placeholder="*******">
+							</label>
+						  <p>
+							Sube un archivo:
+							<input type="file" name="archivosubido">
+							<input type="submit" value="Enviar datos">
+						  </p>
+							<p>¿Álgo fué mal? Pincha aquí y empezamos de nuevo.
+								<input type="reset" value="Restaurar">
+							</p>
+							<label for="idcolor">
+								<input type="color" name="color" id="idcolor">Elija un color
+							</label>
+							<p>
+								<input type="image" src="https://forlac.net/wp-content/uploads/2019/07/BOTON-ENVIAR.png" alt="submit"	>		
+							</p>
+					</fieldset>
+				</form>
+			</main>
+		</body>
+</html>

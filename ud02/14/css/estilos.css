@@ -1,0 +1,18 @@
+* {
+	box-sizing: border-box;
+	margin:0px;
+	padding:0px;
+	border:3px black;
+}
+}
+ol li{
+	background-color:grey;
+	width:25%;
+	display:inline-block;
+	float:left;
+
+}
+a{
+	color:black;
+	font-family:'fa-brands';
+	}

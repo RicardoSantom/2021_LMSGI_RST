@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--Autor:Ricardo Santiago Tomé  Fecha de creación.20/10/2020  Fecha última modificación:07/11/2020-->
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="description" content="Esta página web es la simulación de un formulario para inscribirse en ciclos formativos de Grado Superior">
+			<meta name="author" content="Ricardo Santiago Tomé-1ºDAW">
+			<meta name="Keywords" content="FP,formaciónprofesional,GradoSuperior,DAW,programador,desarrollador,web,estudiar,salidalaboral">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="generator" content="notepad++">
+			<link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+			<link rel="shortcut icon" href="../../images/favicon.ico">
+			  <style> 
+
+        table { 
+		width:100%;
+
+            border-collapse: collapse; 
+
+        } 
+
+ 
+
+        th, 
+
+        td { 
+																								  
+            border: 0px solid black; 
+
+            padding: 20px; 
+
+        } 
+
+			</style> 
+			<title>HTML 04 Ricardo Santiago Tomé</title>
+		</head>
+		<body>
+			<div><header><h1 style="text-align:center">"HOJA DE INSCRIPCIÓN"</h1></header>
+				<h2 style="text-align:center">EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h2>
+				<form action="1registro.php" method="GET">
+					
+					
+					<fieldset style="background-color: #BBBBBB">
+					<legend style="border: 1px solid black; background-color: white">Datos Personales</legend>
+					<table>
+						<tbody>
+							<tr>
+								<td><label for="Nombre">Nombre:</label></td>
+								<td><label for="Lb1Apellidos">Apellidos:</label></td>
+								<td><label for="Lb1DNI">DNI:</label></td>
+								<td><label for="telefono">Teléfono:</label></td>
+							</tr>
+							<tr>
+								<td><input name="nombre" type="text"  id="Nombre" size="25"/></td>
+								<td><input name="apellidos" type="text" id="Lb1Apellidos" size="25"/></td>
+								<td><input name="DNI" type="text"  id="Lb1DNI"/></td>
+								<td><input name="telefono" type="tel"  id="telefono" 
+								pattern="\([0-9]{3}) [0-9]{3} [-][0-9]{3}" placeholder="(000)000-000" required /></td>
+							</tr>
+							<tr>
+								<td><label for="Lb1LocalidaddeNacimiento">Localidad de Nacimiento:</label></td>
+								<td><label for="Lb1Provincia">Provincia:</label></td>
+								<td><label for="Lb1FechadeNacimiento">Fecha de Nacimiento:</label></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>     
+									<input name="LocalidaddeNacimiento" type="text"  id="Lb1LocalidaddeNacimiento" size="25"/></td>
+								<td> <!--Sorpresa! en elemento select antes de abrir un desplegable hay que añadir id
+								          que lo relacione con su label correspondiente-->
+									<select id="Lb1Provincia">
+										<option value="avila">Ávila</option>
+										<option value="burgos">Burgos</option>
+										<option value="leon">León</option>
+										<option value="palencia">Palencia</option>
+										<option value="salamanca">Salamanca</option>
+										<option value="segovia">Segovia</option>
+										<option value="soria">Soria</option>
+										<option value="valladolid">Valladolid</option>
+										<option value="zamora">Zamora</option>
+									</select>
+								</td>
+								<td>
+									<input type="date"  name="Fecha"  min="1960-01-01" id="Lb1FechadeNacimiento"/>
+								</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td colspan=2><label for="direccion">Dirección:</label></td>
+								<td><label for="codigopostal">Código postal:</label></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td colspan=2><input name="direccion" type="text"  id="direccion" size="45"></td>	
+								<td><input name="codigopostal" type="text"  id="codigopostal" pattern="[0-9]{5}"
+								placeholder="00000"></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+					</fieldset>
+					<fieldset style="background-color: rgb(241,194,156)">
+						<legend style="border: 1px solid black; background-color: white">Forma de Acceso</legend>
+							  <ul style=list-style:none;>
+								 <li>
+									<label for="iddirecto"><input type="radio" name="opcion" value="directo" id="iddirecto">Directo</label>
+								 </li>
+								 <li>
+									<ul style=list-style:none;>
+									<!--A continuación no pongo los atributos id en el segundo input de cada línea porque el W3c lo da como error.-->
+										<li>
+											<label for="idbachillerato"><input type="radio" name="opcion" value="bachillerato" id="idbachillerato">Bachillerato modalidad</label><input type="text" name="bachillerato">
+										</li>
+										<li>
+											<label for="idbachilleratoe"><input type="radio" name="opcion" value="bachilleratoe" id="idbachilleratoe">Bachillerato experimental</label>
+										</li>
+										<li>
+											<label for="idCOU"><input type="radio" name="opcion" value="COU" id="idCOU">COU Opción</label><input type="text" name="Cou">
+										</li>
+										<li>
+											<label for="idtitulo"><input type="radio" name="opcion" value="titulo" id="idtitulo">Título de Técnico(FPGM)</label><input type="text" name="titulo">
+										</li>
+										<li>
+											<label for="idtitulacion"><input type="radio" name="opcion" value="titulacion"  id="idtitulacion">Titulación Universitaria</label><input type="text" name="titulacion">
+										</li>
+										<li>
+											<label for="idotros"><input type="radio" name="opcion" value="otros" id="idotros">Otros (especifique)</label><input type="text" name="otros" >
+										</li>
+									</ul>
+								 </li>
+								 <li>
+									<label for="idprueba"><input type="radio" name="opcion" value="prueba" id="idprueba">Prueba libre</label>
+								 </li>
+							   </ul><!--En la lista anterior hay que poner a todos el mismo name para que no deje seleccionar más de uno-->
+								 <!--No encuentro como hacer que si selecionas uno de la lista anterior, no te deje seleccionar el que está fuera de la lista-->
+					</fieldset>
+					<fieldset style="background-color: rgb(182,126,126)">
+						<legend style="border: 1px solid black; background-color: white">Documentos adjuntados</legend>
+						<table>
+							<tbody>
+								<tr>
+									<td><label for="idfotocopia"><input type="checkbox" name="fotocopia" value="fotocopi" id="idfotocopia">Fotocopia DNI</label></td>
+									<td><label for="idcertificado"><input type="checkbox" name="certificado" value="certificado" id="idcertificado">Certificado Académico</label></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td colspan=2><label for="iddocumentos"><input type="checkbox" name="documentos" value="documentos" id="iddocumentos">Otros documentos (especifique)</label>
+										<input name="documentos" type="text" size="30"></td>
+									<td colspan=2></td>
+								</tr>
+							</tbody>
+						</table>
+					</fieldset>
+					<input type="submit" value="Enviar solicitud"/>
+				</form>
+			</div>
+		</body>		
+</html>

@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+/*poltergeist*/
+.wrapper.bodier {overflow:hidden;}
+
+
+/* portada 2018 - atlantis*/
+.grid.g5.simply .gridBox  .m100 > article.cell {width:100% !important;}
+.grid.g4.simply .gridBox  .m100 > article.cell {width:100% !important;}
+.grid.g3.simply .gridBox  .m100 > article.cell {width:100% !important;}
+.grid.g2.simply .gridBox  .m100 > article.cell {width:100% !important;}
+
+.bodier .grid > .gridBox .m100 .cell .play {width:3.6rem;height:3.6rem;}
+.bodier .grid > .gridBox .m100 > .cell .play img {margin-bottom: -0.3rem;opacity: 1;float: left;width: 3.6rem;height: 3.6rem;background-color: #fff;background-image: url(/css/rtve.2015/i/iconos/icons_40x40_active.png);}
+
+
+.bodier .grid > .gridBox .m100 > .cell:first-child .play,
+.bodier .grid > .gridBox .m100 > .cell .play,
+.bodier .grid > .gridBox .m100 > .slavesBox > .cell .play {
+    z-index:3;width:100%;height:auto;
+	background: transparent;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+}
+
+[bourne\:type="component"].arrays .gridBox .topBox .cell .ico.play {background:transparent;}
+
+/*correccion fotogaleria*/
+.bodier .grid  .gridBox.slideH  .ico.play.photo {line-height:7.2rem;}
+.bodier .grid > .gridBox.slideH  .ico .play.photo>span {clip:rect(0,0,0,0);}
+.bodier .grid > .gridBox .arrays.sliderBox .ico.play.photo {width:auto;background:transparent;width:8.2em;height:7.2em;
+	background: #f77707;
+    background: -moz-linear-gradient(left,rgba(247,119,7,1) 0,rgba(240,80,16,1) 100%);
+    background: -webkit-gradient(linear,left top,right top,color-stop(0,rgba(247,119,7,1)),color-stop(100%,rgba(240,80,16,1)));
+    background: -webkit-linear-gradient(left,rgba(247,119,7,1) 0,rgba(240,80,16,1) 100%);
+    background: -o-linear-gradient(left,rgba(247,119,7,1) 0,rgba(240,80,16,1) 100%);
+    background: -ms-linear-gradient(left,rgba(247,119,7,1) 0,rgba(240,80,16,1) 100%);
+    background: linear-gradient(to right,rgba(247,119,7,1) 0,rgba(240,80,16,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f77707', endColorstr='#f05010', GradientType=1 );}
+.bodier .grid > .gridBox .arrays.sliderBox .ico.play.photo img {/*width:3.6rem;height:3.6rem;*/width:6em;height:6em;float:none;background-color:transparent;background-image: url('/css/rtve.2015/i/iconos/icons_60x60_ffffff.png');background-position: 20% 80%;}
+
+.signBlock .xlinks img {width:2.6em;height:2.6em;}
+.mainContent .signBlock .author em {line-height:1;}
+.signBlock .name img {width:3.2em;height:3.2em;}
+.signBlock .socialBlock .ico {height:auto;}
+.author .name, .signBlock .socialBlock .ico {height:auto;}
+
+.incluBox.mediaBox.L[style='width:R%;'],
+.incluBox.mediaBox.L[style='width:L%;'] {max-width: 40%;}
+
+.mainContent .signBlock .name em:before {content: "Por ";text-transform: none;font-weight:300;}
+
+/***/
+/*.article .figcaption > span {display:none;}
+.article .figcaption > p[itemprop="description"] {display:none;}*/
+.summary + .shortBox .container {display:none;}
+
+.article > .figure .live_mod .audioPlayer .vjs-progress-control {display:block;}
+
+
+.size_50.g2 .gridBox.right>.cell:first-child {float:right;}
+.size_50.g2 .gridBox.left>.cell:first-child {float:left;}
+
+/*Directo*/
+.liveBox .eLibreCell {position:relative;}
+.liveBox .eLibreCell.cell {position:relative;}
+.liveBox .eLibreCell.cell .mark {padding-top:56.25%;width:100%;position:relative;padding-bottom: 4.2rem;}
+.liveBox .eLibreCell.cell iframe {position:absolute;top:0;left:0;height:100%;}
+.liveBox .cell+.eLibreCell.cell .mark {padding-bottom: 8.2rem;}
+.liveBox .g2.size_50 .eLibreCell.cell .mark,
+.liveBox .g3.size_33 .eLibreCell.cell .mark,
+.liveBox .g3.size_75 .eLibreCell.cell:first-child .mark,
+.liveBox .cell+.cell:not(.eLibreCell)+.eLibreCell.cell .mark {padding-bottom: 8.2rem;}
+.liveBox .g1.size100 .eLibreCell.cell .mark {padding-bottom: 9.5rem;}
+.liveBox .g4.size_25 .eLibreCell.cell .mark {padding-bottom: 10.2rem;}
+
+/* iframe directo */
+.ima.f16x9 iframe {position: absolute;top: 0;left: 0;width: 100% !important;height: 100%!important;}
+
+
+/* LAZOS */
+.container[class*='Loop'] section>h1:after {content:' ';position:absolute;right:1rem;width:9em;height:100%;display:inline-block;background-size:100% auto;background-repeat:no-repeat;}
+/*apoyo contra el cancer*/
+.loopBox section>h1:after {content:' '; background-image:url('/css/rtve.2015/rtve.sections/i/lazo_rosa.png');position:absolute;top:0;right:4em;
+width:7em;height:8.5em;display:inline-block;background-size:100% auto;background-repeat:no-repeat;z-index:1;}
+/*apoyo contra el sida*/
+.sidaLoop section>h1:after {background-image:url('/css/rtve.2015/rtve.sections/i/lazo_contra_sida.png');}
+.sidaLoop section>h1:before {content:'Día mundial de la lucha contra el SIDA';right:10rem;font-size:140%;line-height:1.2;font-weight:500;color:#494847;bottom:0rem;position:absolute;display:none;}
+.sidaLoop section>h1:hover:before {display:block;}
+/*violencia de genero*/
+.violetLoop section>.secBox:after {background-image:url('/css/rtve.2015/rtve.sections/i/lazo_contra_violencia.png');}
+.violetLoop section>.secBox:before {content:"016, teléfono gratuito para víctimas de la violencia machista, no deja rastro";
+    position:absolute;right:10rem;font-size:140%;line-height:1.2;font-weight:500;width:25rem;display:none;text-align:right;color:#494847;bottom:0rem;}
+.violetLoop section>h1:hover:before {display:block;}
+/** violencia de genero - tu **/
+.violenceLoop section > .secBox:before {content:url("/css/rtve.2015/rtve.sections/i/lazo_ni_una_mas2.png");display:block;position:absolute;top: -1rem;right: 1.6rem;}
+.violenceLoop.bigTit > section > .secBox:before {top: 1rem;}
+.violenceLoop:not(.bigTit) section >.secBox {padding-bottom:1rem}
+/** violencia de genero - el resto**/
+.vActionLoop section > .secBox:before {content:url("/css/rtve.2015/rtve.sections/i/lazo_llamada_accion.png");display:block;position:absolute;top: -1rem;right: 1.6rem;}
+.vActionLoop.bigTit > section > .secBox:before {top: 1rem;}
+.vActionLoop:not(.bigTit) section >.secBox {padding-bottom:1rem}
+
+
+
+/** san fermines **/
+.sanferminBox  div.cell.eLibreCell .mark {padding-top:56.25%;width:100%;position:relative;}
+.sanferminBox iframe {position:absolute;bottom:0;left:0;height:100%;margin-top:3rem;padding-top:1rem;}
+
+/** vilynx */
+.breakNews a.vilynx {overflow:hidden}
+
+
+/** ajustes de video Autoplay
+.inside:not(.bloody) .grid.g3:not(.slaves) .live_mod .mediaBox .video-js:not(.vjs-fullscreen) .play img,
+.container .grid:not(.g1):not(.slaves) .live_mod .video-js:not(.vjs-fullscreen) .ico img,
+.wrapper.bodier .container .grid:not(.g1):not(.slaves)>.gridBox>.cell .live_mod .video-js:not(.vjs-fullscreen) .ico.play,
+.wrapper.bodier .grid:not(.g1):not(.slaves)>.gridBox>.cell .live_mod .video-js:not(.vjs-fullscreen) .play img {width:3.6rem;height:3.6rem;}
+.container .grid:not(.g1):not(.slaves) .live_mod .video-js:not(.vjs-fullscreen) .controlBox .ico,
+.container .grid:not(.g1):not(.slaves) .live_mod .video-js:not(.vjs-fullscreen) .prograBox .ico {line-height:3.6rem}
+.wrapper.bodier .container .grid:not(.g1):not(.slaves)>.gridBox>.cell .live_mod .video-js:not(.vjs-fullscreen) .ico.play {bottom:0}
+.wrapper.bodier .grid:not(.g1):not(.slaves)>.gridBox>.cell .live_mod .video-js:not(.vjs-fullscreen) .play img {top:0;left:0}
+.container .grid:not(.g1):not(.slaves) .live_mod .videoPlayer .video-js:not(.vjs-fullscreen) .vjs-volume-control,
+.container .grid:not(.g1):not(.slaves) .live_mod .video-js:not(.vjs-fullscreen) .vjs-menu-button .vjs-menu {bottom:3.6rem}
+.container .grid:not(.g1):not(.slaves) .live_mod .video-js:not(.vjs-fullscreen) .controlBox .ico.vjs-mute-control {width:5em;}
+
+.container .grid:not(.g1):not(.slaves) .live_mod .video-js:not(.vjs-fullscreen) .vjs-control-bar.controlBox,
+.container .grid:not(.g1):not(.slaves) .live_mod .video-js:not(.vjs-fullscreen) .vjs-control-bar.controlBox .ico,
+.container .grid:not(.g1):not(.slaves) .live_mod .video-js:not(.vjs-fullscreen) .vjs-play-control:not(.ico),
+.container .grid:not(.g1):not(.slaves) .live_mod .video-js:not(.vjs-fullscreen) .vjs-progress-control .vjs-slider,
+.container .grid:not(.g1):not(.slaves) .live_mod .video-js:not(.vjs-fullscreen) .vjs-progress-control .vjs-slider>div {height:3.6rem;}
+.container .grid:not(.g1):not(.slaves) .live_mod .video-js:not(.vjs-fullscreen) .vjs-volume-control .vjs-slider {margin-right:1rem;}
+.container .grid:not(.g1):not(.slaves) .live_mod .video-js:not(.vjs-fullscreen) .vjs-dvrseekbar-control-bar .vjs-live-label {margin-left:0;left:46%}
+
+.container .grid:not(.g1):not(.slaves) .live_mod .video-js:not(.vjs-fullscreen) .vjs-control.ico .vjs-control-text,
+.container .grid:not(.g1):not(.slaves) .live_mod .video-js:not(.vjs-fullscreen) .videoPlayer .vjs-remaining-time,
+.container .grid:not(.g1):not(.slaves) .live_mod .video-js:not(.vjs-fullscreen) .videoPlayer .vjs-current-time,
+.container .grid:not(.g1):not(.slaves) .live_mod .video-js:not(.vjs-fullscreen) .vjs-time-control {display:none;}
+
+.container .grid.g4:not(.g1):not(.slaves) .live_mod .video-js:not(.vjs-fullscreen) .vjs-dvrseekbar-control-bar .vjs-live-label,
+.container .grid.g5:not(.g1):not(.slaves) .live_mod .video-js:not(.vjs-fullscreen) .vjs-dvrseekbar-control-bar .vjs-live-label,
+.container .grid.g3.notory:not(.g1):not(.slaves) .cell:not(:first-child) .live_mod .video-js:not(.vjs-fullscreen) .vjs-dvrseekbar-control-bar .vjs-live-label {display:none;}
+
+
+.audioBox.live_mod.lang_es.lang_es + .overBox {display:none;}
+.bodier .inside .g2.simply>.gridBox>.cell:first-child .audioBox.live_mod.lang_es .play,
+.bodier .inside:not(.bloody) .grid:not(.simply)>.gridBox>.cell:first-child .audioBox.live_mod.lang_es .play {position:relative;top:0;left:0;}
+.wrapper.bodier .container .grid>.gridBox>.cell .live_mod .audioBox.live_mod.lang_es .ico.play {background:transparent;width:auto;height:7.2rem;}**/
+
+
+.mod.video_mod.live_mod.played {position: relative;z-index: 5;}
+
+/*audio live
+.mod.live_mod .audioPlayer {padding-top: 28.125%;background:rgba(0,0,0,.85);}
+.mod.live_mod .video-js {border:0 !important;}
+.mod.live_mod .audioPlayer .vjs-control-bar.controlBox, .mod.live_mod .audioPlayer  .vjs-volume-control {background:transparent;}
+.mod.live_mod .audioPlayer .ico.play {background:transparent;width:auto;height:7.2rem;}
+.mod.live_mod .audioPlayer .vjs-poster.ima  {height: 100%;width:50%;background-size: 100% auto;}
+.mod.live_mod .audioPlayer .ico.play {bottom:0;}
+
+.mod .audioPlayer .video-js {position:absolute;top:0;left:0;}
+
+.wrapper.bodier .container .grid>.gridBox>.cell .live_mod.lang_es .ico.play {width: auto;height:7.2rem;background:transparent;}
+.wrapper.bodier .grid>.gridBox>.cell .live_mod .play img {width:5rem;height:5rem;}
+.mod.live_mod .audioPlayer .vjs-control-bar.controlBox:before {content:none;}*/
+
+/* ajustes play del directo
+.bodier .inside .g3.simply .cell .live_mod.lang_es .play, .bodier .inside.bloody:not(.titles) .g3 .cell .live_mod.lang_es .play,
+.bodier .inside .g2.simply>.gridBox>.cell:first-child .live_mod.lang_es .play, .inside .g2.simply>.gridBox>.cell .live_mod.lang_es .play,
+.inside:not(.unSocialBox) .grid:not(.simply)>.gridBox>.cell:first-child .live_mod.lang_es .ico.play{top: auto;bottom:0;left:0}
+.inside:not(.unSocialBox) .grid.slaves:not(.simply)>.gridBox>.cell:first-child .live_mod.lang_es .ico.play,
+.inside:not(.unSocialBox) .grid.g1:not(.simply)>.gridBox>.cell:first-child .live_mod.lang_es .ico.play,
+.container  .grid>.gridBox>.cell:first-child .live_mod.lang_es .vjs-fullscreen .ico.play {width: 7.2rem;}
+.inside:not(.unSocialBox) .grid.slaves:not(.simply)>.gridBox>.cell:first-child .live_mod.lang_es .ico.play img,
+.inside:not(.unSocialBox) .grid.g1:not(.simply)>.gridBox>.cell:first-child .live_mod.lang_es .ico.play img,
+.container .grid>.gridBox>.cell:first-child .live_mod.lang_es .vjs-fullscreen .ico.play img {left: 50%;margin-left: -2.5rem;position: relative;} */
+
+
+
+/*atlantis*/
+.container.hddnBox .grid:not([bourne\:type="component"]){display:none;}
+.container.hddnBox {display:none;}
+
+.land_view .supra-wrapper {height: auto !important;}
+.land_view .mediaBox.videoBox.vilynx {overflow: hidden;}
+
+/*invento live + ultima fila*/
+.cell.live_mod {padding:0;}
+.cell.live_mod + .cell .mod.notic_mod.falseMaintitle {padding:0;}
+
+.falseH1 .supra-wrapper {display: none;}
+
+a.title_nav {position:absolute;text-align:right;left:5%;width:90%;border:0 none;height:100%;z-index:2;display:inline-block;}
+a.title_nav strong {font-size:1.4rem;text-transform: uppercase;font-weight:900;padding-bottom:0;color:#d25000;}
+div[data-widget="tablaResultadosSlider"] {position:relative;z-index:1;}
+
+/** ajustes include
+.bodier [data-tipo="mod_include"].striplayer:not([class*="bkg"]) .striplayer {background: rgba(0,0,0,.8);}
+.bodier>.container.striplayer[data-tipo="mod_include"] {background:transparent;padding: 0 ;margin: 0;}
+.striplayer[data-tipo="mod_include"] .container.striplayer .secBox > span,
+.striplayer[data-tipo="mod_include"] .container.striplayer .secBox > span a,
+.striplayer[data-tipo="mod_include"][class*="bkg_"] .container:not(.striplayer) .gridBox > .cell .mainBox > .auxBox p,
+.striplayer[data-tipo="mod_include"][class*="bkg_"] .container:not(.striplayer) .gridBox > .cell .mainBox > .auxBox ul li,
+.striplayer[data-tipo="mod_include"][class*="bkg_"] .container:not(.striplayer) .gridBox > .cell .mainBox > .txtBox .maintitle {color:#fff;}
+
+.bodier>.container.striplayer .grid .slavesBox .auxBox p,
+.bodier>.container.striplayer .grid .slavesBox .auxBox ul li,
+.bodier>.container.striplayer .grid .slavesBox .maintitle {color: #494847;} **/
+
+.destaLink {margin-top:-2.2em}
+.destaLink .grid{margin:0}
+.destaLink .grid .gridBox{text-align:center}
+.destaLink .grid .gridBox .links_mod .maintitle{display:inline-block;padding:.8rem 1.2rem;border-radius:.3rem;}
+.destaLink .grid .gridBox .links_mod a:focus, .destaLink .grid .gridBox .links_mod a:hover {background:none!important;}
+.destaLink .grid .gridBox .links_mod a:focus > .txtBox .maintitle, .destaLink .grid .gridBox .links_mod a:hover > .txtBox .maintitle,
+.destaLink .grid .gridBox .links_mod a:focus ~ .txtBox .maintitle, .destaLink .grid .gridBox .links_mod a:hover ~ .txtBox .maintitle{color:#fff !important;background:#ED791B;cursor:pointer;text-decoration:underline;}
+.destaLink .grid .gridBox .txtBox:focus .maintitle{box-shadow:0 0 4rem 0 rgba(0,0,0,.5)}
+.destaLink .grid .gridBox .cell .links_mod .mainBox .txtBox .maintitle{font-size:2.4rem;line-height:3.8rem;display:inline-block}
+.destaLink .grid .gridBox .links_mod .maintitle:before{content:'add_circle_outline';float:left;display:inline;font-size:4rem;font-weight:100;line-height:4rem;text-align:center;text-transform:none;text-rendering:optimizeLegibility;font-family:'Material Icons';-webkit-font-smoothing:antialiased;font-feature-settings:"liga";vertical-align:middle;padding-right:1rem}.destaLink .grid .gridBox .auxBox{display:none}
+
+
+/*AJUSTES LINKS*//*Se ha puesto un enlace independiente en primer lugar*/
+.bodier .gridBox .links_mod a:focus {background:none !important;}
+.links_mod .mainBox {position:relative;}
+.links_mod .mainBox > a {position:absolute;left:0;top:0;width:100%;height:100%;z-index:1;}
+.links_mod .txtBox > a {z-index:2;position:relative;}
+.links_mod .txtBox > a:hover {}
+.links_mod .mainBox > a:hover ~ .txtBox .maintitle {text-decoration:underline;}

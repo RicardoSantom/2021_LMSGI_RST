@@ -1,0 +1,633 @@
+@import url('/css/rtve.commons/rtve.basics/00_reset_2014.css');
+@import url('/css/rtve.television/rtve.television.documentales/documenta.basic.css');
+@import url('/css/rtve.alacarta/comentarios.css');
+@import url('/css/rtve.alacarta/comunes.css');
+@import url('/css/alacarta20/rtve.players.css');
+@import url('/css/rtve.alacarta/alacarta.desktp.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+
+
+/* TEXT & FONTS ************************************************/
+/***************************************************************/
+
+/*font-size*/
+/*2.8em*/
+#rtve .cab_box .falseH1 span,#tve .cab_box .falseH1 span,#rne .false_cab h2 span {font-size:280%;line-height:1.143;letter-spacing:-1px;}
+#rtve .false_cab:last-child h2 span, #tve .false_cab:last-child h2 span  {font-size:280%;line-height:1.143;letter-spacing:-1px;}
+/*1.8em*/
+.mini_cab .principal span, .container .header .titu,.audioContainer + .container .header .titu,.HeaderTabla .ladillo span,.HeaderTabla .f01 .primero a,.HeaderTabla .f01 li a,.mediaTC .content h3 span {font-size:180%;}
+	.mini_cab .principal span, .container .header .titu,.audioContainer + .container .header .titu,.HeaderTabla .ladillo span {line-height:1.444;}
+	.HeaderTabla .f01 li a,#rne .mini_cab .principal span {line-height:1.3333;}
+	.mediaTC .content h3 span {line-height:1;}
+/*1.6em*/
+.mediaTC .content h3 {font-size:160%;line-height:1;}
+/*1.4em*/
+.cab_box .emision *,#rne .false_cab .text * {font-size:140%;}
+.false_cab:last-child .text *{font-size:140%;}
+
+.cab_box .emision *,#rne .false_cab .text * {line-height:1.5;}
+.false_cab:last-child .text *{line-height:1.5;}
+/*#rne .false_cab .text * {line-height:1.5;}*/
+/*1.3em*/
+.mediaTC .textoTranscripcion a,.container .header .date,.audioContainer + .container .header .date,.extra .ladillo span,.mediaCP li span {font-size:130%;}
+	.mediaTC .textoTranscripcion a,.mediaCP li span {line-height:1.3077;}
+	.container .header .date,.audioContainer + .container .header .date {line-height:2;}
+	.extra .ladillo span {line-height:1.692;}
+
+/*1.2em*/
+.container .header p,.mediaBox .date + div > a span,.description + a span,.description + a + a span,.HeaderTabla .f01 li a span,.HeaderTabla .f01 .title,.VideoContainer .videoplay strong,.contenido-programa > .container > p,.contenido-programa .extra > p,.menuBlind span {font-size:120%;}
+	.container .header p,.mediaBox .date + div > a span,.description + a span,.description + a + a span,.VideoContainer .videoplay strong,.contenido-programa > .container > p,.contenido-programa .extra * {line-height:1.5;}
+	.menuBlind span {line-height:2;}
+	.HeaderTabla .f01 .items a span,.HeaderTabla .f01 .all a span,.HeaderTabla .f01 .title {line-height:2.1666;}
+/*1.1em*/
+.bkgAudio .botones li > span  a {font-size:110%;}
+.bkgAudio .botones li > span a {line-height:1.3636;}
+/*1em*/
+.wrapper.socialBox .botones li a,.totem .botones li a,.HeaderTabla .f01 .items a,.HeaderTabla .f01 .all a,.mini_cab .secundaria li a {font-size:100%;}
+	.wrapper.socialBox .botones li a,.totem .botones li a,.mini_cab .secundaria li a {line-height:2.2;}
+
+/*font-style*/
+.viewport .basicmod .titu a,.HeaderTabla .ladillo span,#rne .false_cab .text *,.menuBlid span {font-weight:bold;}
+.false_cab:last-child .text *{font-weight:bold;}
+
+
+/*cabecera programa*/
+.mini_cab {content:inherit;width:100%;display:inline-block;}
+	#tve .false_cab,#rtve .false_cab,
+	#rne .cab_box > * {display:none;}/*hasta que sepamos si se puede gestionar de forma diferenciada*/
+	#rne .cab_box > .nav.secundaria {display:block;}
+	#rne .cab_box > .principal{display:inherit;}
+	/*#rtve .false_cab {display:inherit;}*/
+	#tve .false_cab:last-child, #rtve .false_cab:last-child  {display:block;float:none;width:100%;}
+	.false_cab:last-child {display:inline-block;}
+	#rne .mini_cab {min-height:9em;}
+
+.mini_cab .partners {display:block;position:absolute;right:-10rem;top:0;}
+.mini_cab .partners * {height:100%;width:100%;}
+.mini_cab .partners span a strong {clip:rect(0,0,0,0);position:absolute;overflow:hidden;top:-100%;left:-100%;}
+
+
+/*imagen generica programa*/
+.imgPrograma {float:left;width:16em;margin-left:-16.8em;padding-top:1em;}
+	#rne .imgPrograma {margin:0;}
+.imgPrograma a {display:block;width:100%;padding-top:56.25%;}
+.imgPrograma img {width:100%;height:auto;}
+/*logos cadenas*/
+.cadPrograma > a {height:6.2em;display:inline-block;}
+	#rne .cadPrograma > a {width:12.4em;}
+	#tve .cadPrograma > a {width:8.8em;}
+.cadPrograma img {width:100%;height:100%;display:block;background-repeat:no-repeat;background-size:200% auto;}
+	#rne .cadPrograma img {background-image:url('/css/rtve.alacarta/i/logosRNE.png');background-image:url('/css/rtve.alacarta/i/logosRNEie8.png')\9;}
+		.cadPrograma.radio-nacional img {background-position:100% 0;}
+		.cadPrograma.radio-3 img        {background-position:100% 20%;}
+		.cadPrograma.radio-4 img        {background-position:100% 40%;}
+		.cadPrograma.radio-5 img        {background-position:100% 60%;}
+		.cadPrograma.radio-clasica img  {background-position:100% 80%;}
+		.cadPrograma.radio-exterior img {background-position:100% 100%;}
+	#tve .cadPrograma img {background-image:url('/css/rtve.alacarta/i/logosTVE.png');}
+		.cadPrograma.la1 img,
+		.cadPrograma.la-1-cataluna img    {background-position:0 0;}
+		.cadPrograma.la2 img,
+		.cadPrograma.la-2-cataluna img    {background-position:0 20%;}
+		.cadPrograma[class*="-horas"] img {background-position:0 40%;}
+		.cadPrograma.teledeporte img      {background-position:0 60%;}
+		.cadPrograma.clan img             {background-position:0 80%;}
+		.cadPrograma.tve-hd img,
+		.cadPrograma.tve-hd img		        {background-position:100% 40%;}
+		.cadPrograma.archivo img {background-position:100% 20%;}
+		.cadPrograma.playz img {background-position:100% 40%;}
+
+.cab_box .falseH1{display:inline-block;}
+.false_cab:last-child h2 {display:inline-block;}
+#rtve .mini_cab .header,#tve .mini_cab .header,#rne .false_cab {float:left;width:100%;margin-top:1.2em;}
+.false_cab:last-child{float:left;width:100%;margin-top:1.2em;}
+	#rne .mini_cab .header,#rne .false_cab {width:81.2em;min-width:0;padding:0 12.4rem 0 2rem;}
+.cab_box .emisiones{padding-right:8em;}
+.false_cab:last-child .text {padding-right:8em;}
+	.PFaudio .cab_box .emisiones,
+	.PFaudio .cab_box .falseH1 {float:left;clear:both;}
+	.PFaudio .false_cab:last-child .text,.PFaudio .false_cab:last-child h2 {float:left;clear:both;}
+
+.cab_box .falseH1 span,.mini_cab .principal span,.cab_box .emision *,.false_cab:last-child h2 span {color:#aaa;}
+	#rne .false_cab h2 *,#rne .false_cab .text *,#rne .mini_cab .principal > li > a span {color:#fff;}
+	#rne .false_cab .text * {opacity:0.75;}
+.cab_box .emision strong {color:#666;}
+.cab_box .emision em {font-style:normal;}
+/*ocultamos lo que no esa titulo*/
+.textoLibre {display:none;}
+
+.mini_cab .nav {padding:0.8em 0;}
+.mini_cab .secundaria {padding:0 0 1.6em 0;}
+.mini_cab .nav li {width:auto;display:inline-block;}
+.mini_cab .nav li a,.mini_cab .nav li span {display:inline-block;}
+.mini_cab .principal li a {padding:0 1em;}
+	#tve .mini_cab .principal li a {border-right:0.1em solid #29e;}
+	#rne .mini_cab .principal li a {border-right:0.1em solid #fff;}
+#tve .mini_cab .principal .more li a,#rtve .mini_cab .principal .more li a, #rne .mini_cab .principal .more li a,
+#tve .mini_cab .principal li:last-child a,#rtve .mini_cab .principal li:last-child a,#rne .mini_cab .principal li:last-child a {border:0 none;}
+
+.mini_cab .principal > li:first-child a {padding-left:0;}
+.mini_cab .principal li a:hover span {}
+
+.mini_cab .secundaria li {margin-right:0.1em;}
+.mini_cab .secundaria li span {font-weight:bold;color:#444;}
+.mini_cab .secundaria li a {border-radius:0.3em;}
+.mini_cab .secundaria li a:hover {background:#888;background:#0b6ede;}
+.mini_cab .secundaria li a:hover span {color:#fff;}
+
+/*menu desplegable*/
+.mini_cab .principal .more > a {padding-right:2.4em;background:url('/css/style/cab_generica/i/iconos/flecha.gif') 96% -57% no-repeat;}
+.mini_cab .principal .more:hover > a {background-position:96% 149%;}
+.principal .more > ul {display:none;background:#fff;box-shadow:0 0.6em 0.6em rgba(0,0,0,0.2);margin-left:-0.4em;padding:1.2em 0.4em 0.4em 0.4em;border-radius:0 0 0.4em 0.4em;}
+.principal .more > ul:hover,.principal .more > a:hover + ul {display:inline-block;}
+.mini_cab .principal .more li,.mini_cab .principal .more li a {width:100%;}
+.mini_cab .principal .more li span {color:#888;}
+.mini_cab .principal .more li {float:left;margin:0.2em 0;}
+.mini_cab .principal .more li {border-bottom:0.1em solid #ddd;}
+.mini_cab .principal .more li:last-child {border:0 none;}
+
+/*loguitos*/
+
+
+/* DESCRIPCION PROGRAMA ****************************************/
+/***************************************************************/
+.contenido-programa .totem,.menuBlind {float:left;}
+.contenido-programa .totem {width:15.2em;margin-left:-16.8em;padding-bottom:1.6em;}
+/*sincronizado con imagen de programa*/
+	.contenido-programa .totem .botones > li {margin:0.4em 0;}
+	.contenido-programa .totem .botones > li,.contenido-programa .totem .botones > li a {width:100%;}
+.contenido-programa > p {padding-left:14%;}
+.menuBlind {clear:both;width:100%;display:inline-block;margin:0 auto;float:none;padding-bottom:1.2em;max-width:98em;}
+.menuBlind span {cursor:pointer;font-weight:bold;opacity:0.65;}
+.menuBlind span:hover {opacity:1;}
+.menuBlind span,.expanded .menuBlind .reduce,.expanded .extra.mark,.contenido-programa {display:inline-block;}
+.menuBlind .reduce,.expanded .menuBlind .expand,.extra.mark {display:none;}
+.contenido-programa {position:relative;width:100%;padding-bottom:-2.4em;}
+.extra.mark {background:#f5f5f5;padding:2% 4%;border-top:0.1em solid #eee;}
+.extra .ladillo {padding-top:0.3em;margin-bottom:0.1em;border-bottom:0.1em solid #ddd;}
+.extra .ladillo span {color:#666;font-weight:bold;}
+.extra .menuBlind {padding-top:2.4em;}
+
+
+
+
+/*solo programas de television*/
+.PFprograma#tve .box-programa + .box-programa > .container {width:100%;}
+
+.reduced#contenidoshowhide .extra {display:none;}
+
+.menuBlind {position:relative;top:0;}
+
+/*solo programas de radio*/
+.PFprograma#rne .totem .download,.PFprograma#rne .bkgAudio .botones .podcast {/*display:none;*/}
+.PFprograma#rne .box-programa + .box-programa > .container {background:transparent;width:100%;padding-top:1.2em;}
+.PFprograma#rne .box-programa + .box-programa {background:#f2f2f2;background:#fff;filter:none;}
+.PFprograma .bkgAudio {margin:0;background:#f5f5f5;}
+.PFprograma .bkgAudio .header {padding:1em 0;display:inline-block;width:100%;}
+/*.PFprograma .bkgAudio .mediaPlayer {width:73%;}
+.PFprograma .bkgAudio .botones {width:27%;padding:0;}*/
+.PFprograma .bkgAudio .botones > li {float:right;margin:0;}
+.PFprograma#rne .menuBlind {padding:0.8em 0 0.4em 0;}
+.PFprograma#rne .extra .menuBlind {padding:3.2em 0 0 0;}
+.PFprograma#rne .contenido-programa > .container
+/*.PFprograma .bkgAudio > .container,.PFprograma#rne .menuBlind*/ {padding-left:16em;}
+.PFprograma#rne .contenido-programa .totem {width:15em;margin:0 1em 0 -16em;}
+.PFprograma#rne .extra > * {margin:0 auto;clear:both;display:block;}
+.PFprograma#rne .extra > h3 {width:98em;}
+.PFprograma#rne .extra > p {width:81.666em;}
+
+
+/* DESCRIPCION PROGRAMA ****************************************/
+/* END *********************************************************/
+
+
+/*playicon*/
+.VideoContainer object a {display:block;}
+.VideoContainer .videoplay {width:7.4em;height:7.4em;background:url('/css/style/i_news/hover_photo/playiconM.png') 50% 50% no-repeat;background-size:200%;}
+.VideoContainer .videoplay strong {display:inline-block;font-weight:normal;text-transform:lowercase;color:#fff;width:100%;text-align:center;}
+
+/*transcripcion*/
+.mediaBox .mediaText {display:block;height:100%;}
+	.PFvideo .mediaBox .mediaText {width:30%;}
+	.PFaudio .mediaBox .mediaText {width:98em;margin:0 auto;}
+.mediaTC .cab,.mediaTC .content,.reduced .KingSize {display:none;}
+.mediaTC .KingSize {/*padding:0;text-align:right;*/}
+	.mediaCP + .mediaTC .KingSize {text-align:center;}
+.reduced .mediaText {padding:2em 1em 2em 2em;background:rgba(255,255,255,0.9);}
+.reduced .mediaTC {height:100%;overflow-x:hidden;overflow-y:auto;padding-right:1em;}
+.mediaTC .textoTranscripcion,.mediaCP li a + span {color:#222;}
+.mediaCP li a {margin-right:0.3em;}
+.mediaCP li span {display:inline;}
+.mediaTC .textoTranscripcion {display:inline-block;}
+.mediaTC .content h3 {padding-bottom:0.5em;margin-top:-0.5em;border-bottom:0.0625em solid #fff;}
+.mediaTC .close img {background-position:100% -2.6em;opacity:0.66;}
+.mediaTC .close strong {color:#aaa;}
+
+/*botonera social*/
+/*.wrapper.socialBox .botones,*/
+.totem .botones,.wrapper.socialBox .botones .tooltip li,.wrapper.socialBox .tooltip .pointer {display:inline-block;}
+.wrapper.socialBox .botones > li,.totem .botones > li,.bkgAudio .botones > li {/*float:left;*/}
+.wrapper.socialBox {padding:0;text-align:center;z-index:1;/*para que se vean los tultip*/}
+.wrapper.socialBox > li {display:inline-block;}
+.wrapper.socialBox .botones {display:flex;text-align:left;width:98em;padding:1.5em 0;background:#fff;text-align:center;padding:1.5em 0 0 3.5em;margin:0 auto;min-height:4em;}
+.wrapper.socialBox .botones  > li{display:inline-block;}
+.wrapper.socialBox .botones  > li[class*='_connect']{padding-top:0.3em;}
+.wrapper.socialBox .botones li a {font-size:1.2rem;font-weight:bold;color:#444;}
+
+.wrapper.socialBox li > span:before {content:'';display:inline-block;background-image:url('/css/rtve.2015/i/iconos/icons_40x40_000000.png');background-size:1100%;width:2.2rem;height:2.2rem;opacity:0.66;position:absolute;left:0.4rem;top:50%;margin-top:-1.1rem;}
+	.wrapper.socialBox .aniadirA > span:before {background-position: 50% 20%;}
+	.wrapper.socialBox .favoritos > span:before {background-position:50% 40%;}	
+	.wrapper.socialBox .suscribirse > span:before {background-position:30% 0;}
+	.wrapper.socialBox .enlazar > span:before {background-position: 0 100%;background-image: url('/css/alacarta20/i/iconos/ico-embed.png');background-size: 100%;}
+	.wrapper.socialBox .compartir > span:before {background-position:0 75%;}
+.wrapper.socialBox .suscribirse {display:none;}
+	
+	.totem li > span a {background-repeat:no-repeat;background-image:url('/css/alacarta20/i/botones/iconosBotones2014.png');}
+	.totem .favoritos > span a {background-position:0 25%;}
+.wrapper.socialBox .botones .tooltip ul{/*margin-top:-3.2em;*/display: inline-block;}/** margin quitado para evitar que se salgan las opciones del desplegable de enviar **/
+.wrapper.socialBox .botones .tooltip li {width:100%;}
+
+
+
+.wrapper.socialBox .botones .tooltip a img {width:1.6em;height:1.6em;vertical-align:middle;margin:-0.3em 0.5em 0 0;background:url('http://img.irtve.es/css/alacarta20/i/iconos/social_bookmarks.png') no-repeat;}
+.wrapper.socialBox .botones .tooltip a img + span {line-height:1.833;}
+	.wrapper.socialBox .botones .tooltip .menea a img {background-position:0 -9.6em;}
+	.wrapper.socialBox .botones .tooltip .tuent a img {background-position:0 -6.4em;}
+	.wrapper.socialBox .botones .tooltip .posta a img {background-position:0 100%;}
+
+.wrapper.socialBox .enlazar .tooltip p {font-weight:bold;padding:0.4em 0;}
+.wrapper.socialBox .enlazar .tooltip textarea {width:100%;height:8em;color:#555;}
+
+
+/*nuevos sociales*/
+.socialBox .ico > a {display:flex;padding:0 0.6rem;border-width:0.2rem;background-color:#f2f2f2;}
+.socialBox .ico > a:hover {border-color:#fff;}
+.socialBox .ico .legend {font-size:1.2rem;font-weight:bold;color:#444;}
+.socialBox .ico .datnum {display:none;}
+.socialBox li,.socialBox .share .blind {}
+.socialBox .ico a > img {background-image:url('/css/rtve.2015/i/iconos/icons_40x40_000000.png');opacity:0.66;background-repeat:no-repeat;background-size:1100%;width: 2.2rem;height: auto;}
+	.socialBox .fbook img {background-position:00% 60%;}
+	.socialBox .twitt img {background-position:10% 60%;}	
+	.socialBox .linke img {background-position:60% 60%;}
+	.socialBox .bmark img {background-position:20% 40%;}	
+
+
+/*especial 'rss'*/
+.wrapper.socialBox .botones .tooltip .etiqueta,.wrapper.socialBox .botones .tooltip input {float:left;margin-top:0.5em;font-weight:bold;}
+.wrapper.socialBox .botones .tooltip .etiqueta {width:24%;background:#ccc;text-align:center;}
+.wrapper.socialBox .botones .tooltip input {width:76%;color:#666;background:#fff;border:0.0909em solid #ccc;height:2em;padding-left:0.3636em;}
+.wrapper.socialBox .botones .tooltip input#rss_feed:focus {background:#ffff00;}
+
+/*bloque descripcion video condicionado a socialBox --problema con los videos audios despublicados */
+.wrapper:not(.box-programa)  .container >.header {padding:2.4em 3.6em;}
+.audioContainer + .container .header {padding:2.4em 0;}
+.wrapper:not(.box-programa)  .container .header h2,
+.audioContainer + .container .header h2 {float:left;max-width:88%;}
+.wrapper:not(.box-programa) .container .header .date,
+.audioContainer + .container .header .date {float:right;}
+.wrapper:not(.box-programa) .container .header .date strong,
+.audioContainer + .container .header .date strong {font-weight:normal;}
+.wrapper:not(.box-programa) .container .header .description,.socialBox + .container .header .date + div {clear:both;width:100%;}
+.wrapper:not(.box-programa) .container .header .date + div {padding:0.6em 0;}
+.wrapper:not(.box-programa) .container .header .titu,.audioContainer + .container .header .titu {color:#727272;font-weight:bold;}
+.wrapper:not(.box-programa) .container .header p {color:#858585;color:#444;}
+.wrapper:not(.box-programa) .container .header .reduced .description {height:3.6em;overflow:hidden;}
+.wrapper:not(.box-programa) .container .header .date + div > a {float:none;margin:0 auto;padding-left:1.4em;display:inline-block;}
+.wrapper:not(.box-programa) .container .header .date + div.expanded > a.expand,.socialBox + .container .header .date  + div.reduced  > a.reduce {display:none;}
+.wrapper:not(.box-programa) .container .header .expand {background:url('/css/alacarta20/i/comunes/vermas.gif') no-repeat 0 130%;}
+.wrapper:not(.box-programa) .container .header .expand:hover {background-position:0 -40%;}
+.wrapper:not(.box-programa) .container .header .reduce {background:url('/css/alacarta20/i/comunes/vermenos.gif') no-repeat 0 130%;}
+.wrapper:not(.box-programa) .container .header .reduce:hover {background-position:0 -40%;}
+
+
+/*filtros*/
+.HeaderTabla .f01 .items a,.HeaderTabla .f01 .all a {font-size:100%;}
+.HeaderTabla .f01 {float:right;}
+.HeaderTabla .f01 > *,.HeaderTabla .f01 ul > li {float:left;}
+.HeaderTabla .f01 li a,.HeaderTabla .f01 li a span {display:inline-block;}
+.HeaderTabla .f01 li {min-width:2em;text-align:center;}
+.HeaderTabla .f01 li,.HeaderTabla .f01 .items a {margin:0 0.1em;}
+.HeaderTabla .f01 .items {margin:0;}
+	.HeaderTabla .f01 .primero,.HeaderTabla .f01 .anterior,.HeaderTabla .f01 .siguiente,.HeaderTabla .f01 .ultimo {background:#efefef;border:0.1em solid #ddd;}
+	.HeaderTabla .f01 .primero a,.HeaderTabla .f01 .anterior a,.HeaderTabla .f01 .siguiente a,.HeaderTabla .f01 .ultimo a {font-weight:bold;color:#bbb;}
+	.HeaderTabla .f01 .all a {padding:0 1em;}
+.HeaderTabla .f01 .items a {float:left;}
+.HeaderTabla .f01 .items a span {width:auto;text-align:center;background:#e8e8e8;}
+
+
+/*ladillos*/
+.HeaderTabla {border-bottom:0.1em solid #ccc;padding-bottom:0.2em;width:100%;}
+.HeaderTabla,.HeaderTabla .ladillo {display:inline-block;}
+.HeaderTabla .ladillo span em {font-style:normal;font-weight:normal;}
+
+
+/*slides relacionados*/
+.SlideRel .slideBox {padding:0 4em;}
+.slideBox .viewport {overflow:hidden;width:100%;min-height:16.8em;}
+.slideBox .overview {display:inline-block;max-height:18em;}
+.slideBox .buttons {width:3em;height:8.9em;background:url('/css/alacarta20/i/botones/SliderButtons.png') no-repeat;text-indent:-900%;overflow:hidden;}
+	.slideBox .prev {border-right:0.1em solid #ccc;}
+	.slideBox .next {border-left:0.1em solid #ccc;background-position:100% 0;}
+.slideBox .thumbox {float:left;width:16em;height:auto;min-height:18em;padding:0.4em 0.8em 0 0;}
+	.viewport .basicmod .titu a {color:#3f3f3f;max-height:3.819em;overflow:hidden;display:inline-block;}
+	.basicmod .txt p {padding-top:0.5em;color:#888;}
+
+
+
+
+
+/*skin*/
+.cuerpo .bkgVideo .container {background:transparent;}
+/*nuevo*/.cuerpo .bkgVideo .container {background:transparent;width:100%;max-width:131.3em;max-width:98em;}
+/*nuevo*/.cuerpo .bkgVideo .hasMediaText {max-width:122.5em;}
+
+
+.bkgVideo {overflow:hidden;}/*.bkgAudio*/
+
+/*nuevo*/.bkgVideo {background:#444;}
+
+img.bkgVideo {height:auto;width:100%;}
+/*nuevo*/img.bkgVideo {height:auto;}
+
+img.bkgVideo {opacity:0.15;}
+
+.PFprograma .box-programa {padding-bottom:0;position:relative;}
+.PFvideo#rne .box-programa,
+.PFaudio#rne .box-programa,
+.PFaudio#rne .audioContainer,
+.PFvideo#rne .audioContainer  {
+background: 					linear-gradient(left bottom,rgb(160,30,30) 15%,rgb(230,40,40) 95%);
+background: 			 -o-linear-gradient(left bottom,rgb(160,30,30) 15%,rgb(230,40,40) 95%);
+background: 		 -moz-linear-gradient(left bottom,rgb(160,30,30) 15%,rgb(230,40,40) 95%);
+background: 	-webkit-linear-gradient(left bottom,rgb(160,30,30) 15%,rgb(230,40,40) 95%);
+background: 			-ms-linear-gradient(left bottom,rgb(160,30,30) 15%,rgb(230,40,40) 95%);
+background: 				 -webkit-gradient(linear,left top,right bottom,color-stop(15%,rgb(160,30,30)),color-stop(95%,rgb(230,40,40)));
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a01e1e', endColorstr='#e62828',GradientType=1 );
+}
+/*.PFprograma .box-programa + .box-programa,*/
+.PFaudio .box-programa > *,
+.PFvideo .box-programa > * {background:none;}
+.PFprograma.PFvideo .box-programa + .box-programa {background:#fff;}
+.bkgAudio {padding-bottom:0.6em;margin-top:-4.7em;}
+.bkgAudio .hasMediaText {margin-bottom:-0.6em;}
+
+.bkgAudio > img {width:24.5em;margin-left:24.5em;height:auto;opacity:0.3;}
+.bkgAudio .container {background:transparent;}
+.audioContainer .playerBox {
+background: rgb(247,119,7); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(247,119,7,.4) 0%, rgba(0,0,0,1) 66%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(247,119,7,1)), color-stop(66%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(247,119,7,.4) 0%,rgba(0,0,0,1) 66%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(247,119,7,.4) 0%,rgba(0,0,0,1) 66%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(247,119,7,.4) 0%,rgba(0,0,0,1) 66%); /* IE10+ */
+background: linear-gradient(to right,  rgba(247,119,7,.4) 0%,rgba(0,0,0,1) 66%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f77707', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
+}
+/*austes player video en programas*/
+.mediaBox.videoBox {width:98em;display:inline-block;position:relative;}
+
+/*ajustes player audio en programas*/
+.PFaudio .bkgVideo {display:none;}
+.PFprograma .audioContainer > .container,
+.PFaudio .audioContainer > .container {position:relative;}
+.audioPlayer .vjs-control-bar {padding-right:12em;}
+.PFprograma .mediaPlayer .vjs-control-bar .vjs-remaining-time {}
+.PFprograma .playerBox + .botones,
+.PFaudio .playerBox + .botones {width:12em;height:auto;position:absolute;right:0;top:0;z-index:2;}
+.PFprograma .playerBox + .botones > li,
+.PFaudio .playerBox + .botones > li {width:3.8em;height:5.8em;float:left;padding:1.6em 1em;background:0 none;box-shadow:none;position:relative;}
+.PFprograma .playerBox + .botones li > span,
+.PFaudio .playerBox + .botones li > span {width:2.8em;height:2.8em;display:inline-block;overflow:hidden;
+background-image:url('/css/rtve.2015/i/iconos/icons_60x60_ffffff.png');
+background-repeat:no-repeat;background-size:1100%;}
+.botones .download > span {background-position:100% 0;}
+.botones .podcast > span {background-position:90% 0;}
+.botones .download > span,.botones .podcast > span #Podcast a {padding-top:2.8rem;display:inline-block;}
+#popupPodcast {bottom:1em;}
+
+.audioContainer .botones .download:hover > span,
+.audioContainer .botones .podcast:hover > span {background-image:url('/css/rtve.2015/i/iconos/icons_60x60_active.png');cursor:pointer;}
+
+.PFprograma .bkgAudio .botones .download a {
+
+/*font-weight:normal;position:absolute;top:0;left:-50%;width:200%;height:100%;color:#b5b5b5;padding-top:5.4rem;display:inline-block;text-align:center;*/
+}
+/*.PFprograma .bkgAudio .botones .download:hover a {color:#f70;}*/
+
+.audioContainer .botones .download a {position:absolute;color:transparent;height:100%;top:0;left:0;}
+
+
+/* tooltip descargar comentamos para ajustar estilos al resto de tooltips
+.audioContainer .botones .download a:before {content:attr(title);display:none;color:#444;
+position:absolute;width:28em;left:-14em;bottom:-100%;margin-bottom:0.8em;
+font-weight:normal;
+font-size:120%;text-align:right;line-height:1.5;text-align:center;
+    height: auto;
+    background: #f4f4f4;
+    border: 0.1em solid #ccc;
+    border-radius: 0.8em;
+    padding: 1.2em;
+    box-shadow: 0 0.4em 0.6em rgba(0,0,0,0.2);
+}*/
+.audioContainer .botones .download a:before {content:attr(title);display:none;color:#000;
+position:absolute;width:28em;left:-14em;bottom: 5em;margin-bottom:0.8em;font-weight:normal;
+font-size:120%;text-align:right;line-height:1.5;text-align:center;height:auto;background:rgba(255, 255, 255, 0.85);padding:1.2em;box-shadow:.1rem .2rem .6rem rgba(0,0,0,.5);}
+
+
+.audioContainer .botones .download:hover a:before {display:inline-block;}
+.playerBox .audioBox > .ima:not(.audioPlayer),.audioBox .audioPlayer .vjs-poster {display:none;}
+.audioPlayer .vjs-control-bar,.playerBox .audioBox > a {padding-left:0;}
+.playerBox .audioBox > a .play,.playerBox .audioBox .vjs-duration {left:0;}
+/* .playerBox .audioBox > a .play,.playerBox .audioBox .vjs-play-control,.playerBox .audioBox .vjs-duration > div {width:14.8rem;}
+.playerBox .audioBox .vjs-current-time,
+.playerBox .audioBox .vjs-remaining-time {left:14.8rem;} */
+
+
+/*hasTranscripcion*/
+.mediaBox.videoBox.hasMediaText {width:70%;max-width:98em;}
+.videoBox .textRel {width:35%;max-width:24em;}
+
+
+.hasTC {}
+.mediaPlayer {}
+.PFvideo .hasMediaText .mediaPlayer {padding-right:20%;}
+.PFvideo .mediaBox .hasMediaText .mediaText {width:20%;}
+.hasMediaText .mediaText .mediaCP,.hasMediaText .mediaText .mediaTC .content {background:rgba(255,255,255,0.75);}
+.hasMediaText .mediaText .mediaTC .content {border:2em solid transparent;border-left:0 none;border-right:0 none;}
+
+.mediaTC,.mediaCP,.PFvideo .mediaTC .KingSize,.PFvideo .mediaTC .KingSize * {width:100%;}
+.mediaTC,.mediaCP {height:100%;}
+.PFvideo .mediaTC .KingSize {padding:2em;}
+
+
+/*cuePoints*/
+.PFvideo .mediaCP,.mediaCP .cab,.PFvideo .mediaCP ul {display:block;}
+.PFvideo .mediaCP {padding:3em 0 6.8em 2em;}
+.mediaCP .cab,.PFvideo .mediaCP ul,.mediaCP li,.mediaTC .textoTranscripcion {width:100%;}
+.mediaCP .cab .titu {font-size:120%;line-height:2.5;display:inline-block;font-weight:bold;text-transform:uppercase;}
+.mediaCP li,.mediaTC .textoTranscripcion {padding:0.6em 0;border-bottom:0.1em solid #eee;clear:both;}
+.textoTranscripcion img {width:3.6em;height:auto;float:left;margin:0 0.6em 0 0;}
+.PFvideo .mediaCP .cab {margin-top:-3em;}
+.PFvideo .mediaCP ul,
+.hasMediaText .mediaText .mediaTC .content {position:relative;top:0;left:0;height:100%;overflow-y:auto;overflow-x:hidden;padding:1em 2em 0 0;}
+.hasMediaText .mediaText .mediaTC .content {padding-left:2em;}
+.PFvideo .mediaCP ul {box-shadow:inset 0 1em 1em -1em rgba(0,0,0,0.5);}
+
+.wrapper.socialBox .enlazar .tooltip p,.HeaderTabla .ladillo span,.menu_lateral dt a,.wrapper.socialBox li > span a {color:#444;}
+.menu_lateral .myhist dd span,.socialBox + .container .header .date + div > a,.HeaderTabla .f01 .items a,
+.viewport .basicmod .titu a:hover,.viewport .basicmod .titu a:focus,
+.HeaderTabla .f01 .all a,.menuBlind span,
+.mini_cab .principal li a:hover span,.mediaCP li span,.mediaCP li a:hover,
+.mini_cab .principal li a:focus span,.mediaCP li span,.mediaCP li a:focus {color:#0b6ede}
+.viewport .basicmod .titu a:focus {text-decoration:underline;}
+
+/*cuePoints radio*/
+.audioContainer > .container {background:transparent;}
+.PFaudio .hasMediaText .textRel {background:#ccc;width:100%;}
+
+.PFaudio .mediaCP {padding:1.2em;clear:both;display:inline-block;}
+.PFaudio#rne .mediaCP {margin-top:0.6em;}
+.PFaudio .mediaCP .cab {width:17.5%;text-align:right;padding-right:2.4em;}
+.PFaudio .mediaCP ul {width:82.5%;padding-right:1.2em;height:12em;overflow-y:auto;}
+.PFaudio .mediaCP > * {float:left;}
+.PFaudio .mediaCP li {width:33.3%;clear:none;float:left;width:100%;clear:both;}
+.PFaudio .hasMediaText .mediaText .mediaCP {
+background: 					linear-gradient(top,rgba(255,255,255,1) 0%,rgba(255,255,255,0.5) 100%);
+background: 			 -o-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(255,255,255,0.5) 100%);
+background: 		 -moz-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(255,255,255,0.5) 100%);
+background: 	-webkit-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(255,255,255,0.5) 100%);
+background: 			-ms-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(255,255,255,0.5) 100%);
+background: 				 -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255,255,255,1)),color-stop(100%,rgba(255,255,255,0.5)));
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#dcdcdc',GradientType=0);
+}
+
+
+
+
+/*positioning*/
+.bkgVideo,.bkgAudio,.bkgVideo .container,.bkgAudio > .container,.imgPrograma a,.mediaPlayer,.wrapper.socialBox .botones li,.wrapper.socialBox .botones .tooltip,.SlideRel .slideBox,.SlideRel .viewport,.VideoContainer object a,.mini_cab,.false_cab,.mini_cab .header,.principal .more,.PFprograma#rne .mediaBox,.PFprograma#rne .box-programa + .box-programa,.videoContainer .playerBox  {position:relative;}
+img.bkgVideo,.bkgAudio > img,.imgPrograma img,.PFvideo .mediaBox .mediaText,.close,.slideBox .buttons,.VideoContainer .videoplay,.VideoContainer .videoplay strong,#rne .imgPrograma,.cadPrograma,.principal .more > ul,.PFvideo .mediaTC,.PFvideo .mediaCP,.PFvideo .mediaTC .KingSize {position:absolute;}
+
+.principal .more > ul {left:0;top:100%;}
+
+.slideBox .buttons {top:33.33%;}
+.slideBox .prev {left:0;}
+.slideBox .next {right:0;}
+
+.PFvideo .mediaTC,.PFvideo .mediaCP {top:0;}
+.PFvideo .mediaCP {left:0;}
+.PFvideo .mediaTC {left:-100%;top:-15em;}
+.PFvideo .mediaTC .KingSize {bottom:-15em;right:-100%;}
+
+img.bkgVideo,.imgPrograma img {left:0;top:0;}
+.bkgAudio > img {left:50%;top:0;}
+.mediaBox .mediaText {right:0;top:0;}
+.reduced .bkgVideo .container {left:-14.7em;}/*1/2 30% s/98em*/
+
+.VideoContainer .videoplay {left:50%;top:50%;}
+.VideoContainer .videoplay strong,#rne .imgPrograma {left:0;bottom:0;}
+
+#rne .mini_cab .header,#rne .false_cab {left:16em;}
+.cadPrograma {right:0;top:1.2em;}
+#tve .cadPrograma {top:0.6em;}
+
+.principal .more > ul {z-index:3;}
+.bkgVideo .container,.mediaPlayer,.totem .tultip,.cadPrograma,.mediaBox .hasMediaText .mediaText, .videoContainer .playerBox {z-index:1;}
+img.bkgVideo,.mediaBox .mediaText {z-index:0;}
+
+
+.ContentNavigation .close {top:0.5%;right:4.5%;}
+.mediaTC .close {right:0.4em;top:-2.9em;}
+
+
+@media only screen and (max-width:1024px) {
+div[class*="container-"] .mark {width:97%;}
+.container-cabecera-rtve .mark > ul li {padding:1.2em 4.5em 1.2em 0;}
+.extra.mark,.contenido-programa > .container {padding:1.2em;}
+.PFaudio .bkgAudio {padding-bottom:0.6em;}
+.PFprograma#rne .contenido-programa > .container {padding-left:17.2em;}
+#tve .false_cab:last-child {padding:0 1.2em;}
+#rne .mini_cab{padding:0 1.2em;}
+.contenido-programa > .container + .menuBlind,.PFprograma#rne .menuBlind {padding-left:1.2em;}
+.bkgVideo {padding:0;}
+.cuerpo .container,.bkgAudio .hasMediaText .mediaText,.foot .container {width:100%;}
+.cab_especial {clear:none;}
+.imgPrograma {margin-left:0;}
+.imgPrograma,.cab_box .emisiones{margin-right:1.2em;}
+.false_cab:last-child .text {margin-right:1.2em;}
+#tve .mini_cab .header , #rtve .mini_cab .header{max-width:100%;float:none;display:block;}
+.botones .podcast .tultip {left:89%;}
+.cadPrograma {right:1.2em;}
+#rne .imgPrograma {left:1.2em;}
+#tve .imgPrograma , #rtve .imgPrograma {position:relative;z-index:1;}
+.bkgAudio {margin-top:-4.7em;}
+.bkgAudio .mediaPlayer {width:49%;margin-left:1%;}
+.PFprograma .bkgAudio .mediaPlayer {width:48%;}
+.PFprograma .bkgAudio .header {padding:1em 1.2em;}
+
+}
+
+@media only screen and (max-width:1204px) {
+/*partner*/
+.mini_cab .partners {right:10rem;}
+}
+
+/*ocultando elementos*/
+#rtve.alacarta.PFvideo .cuerpo .top +.video .container .header {display:none;}
+
+/*NUEVOS SLIDERS*/
+.SlideRel .slideBox .overview .thumbox {padding:0.4rem;}
+.slideBox .overview {width:auto;min-width:500%;}
+.SlideRel .slideBox .viewport {overflow-x:auto;height:19rem;}
+
+/*CONTROLES SLIDERS*/
+.slideBox .overview {left:0;}
+.slideBox .controles {position:absolute;top:50%;left:0;height:0;width:100%;z-index:1;}
+.slideBox .controles span {cursor:pointer;position:absolute;width:4rem;height:6rem;padding:1.4rem 0;background:#efefef;top:-6rem;display:inline-block;text-align:center;}
+.slideBox .controles span:after {content:'';width:3.2rem;height:3.2rem;opacity:0.33;display:inline-block;
+background-image:url('/css/rtve.2015/i/iconos/icons_40x40_000000.png');background-repeat:no-repeat;background-size:1100%;}
+.slideBox .controles .left:after {background-position:20% 20%;}
+.slideBox .controles .right:after {background-position:30% 20%;}
+.slideBox .controles .left {left:0;}
+.slideBox .controles .right {float:right;right:0;}
+.slideBox .overview {
+-webkit-transition: left 0.75s;
+   -moz-transition: left 0.75s;
+     -o-transition: left 0.75s;
+        transition: left 0.75s;
+        }
+.slideBox .controles .beoff {opacity:0.2;cursor:default;}
+
+/*CAMBIOS X CABECERAS OSCURAS*/
+body:not(#rne).PFprograma .box-programa, body:not(#rne).PFprograma .box-programa .container, 
+.PFvideo .box-programa, .PFvideo .box-programa + .box-programa,
+body:not(#rne).PFvideo .box-programa .container {background:#333;}
+
+#rtve .cab_box .falseH1 span,.cab_box .falseH1, #tve .cab_box .falseH1 span, #tve .cab_box .falseH1 a {color:#fff;}
+#rtve .cab_box .emision strong,#tve .cab_box .emision strong,
+#rtve .mini_cab .principal span,
+#rtve .contenido-programa .container p,#tve .contenido-programa .container p {color:#aaa;}
+#tve .TotalNavigation2 {border-bottom-color:#115181;}
+#tve .menuBlind .expand,#tve .mini_cab .principal span {color:#6eaede;opacity:1;}
+#tve .menuBlind .expand:hover,#tve .mini_cab .principal span:hover {color:#fff;}
+#tve .menuBlind span:hover,#tve .mini_cab .principal span:hover {text-decoration:underline;}
+
+/*cab 2 secundaria */
+#tve .mini_cab .secundaria li a {background:transparent;}
+#tve .mini_cab .secundaria li a span {color: #6eaede;font-size:1.8rem;font-family: 'Roboto';font-weight: 400;line-height: 1.444;}
+#tve .mini_cab .secundaria li a {border-right: 0.1em solid #29e;}
+#tve .mini_cab .secundaria > li:first-child a {padding-left: 0;}
+
+/*de cms*/
+#tve .false_cab h2 span,
+#rtve .false_cab h2 span,
+#tve .false_cab .text,
+#rtve .false_cab .text {font-family:'Roboto';font-weight:300;}
+#tve .false_cab h2 span, #tve .false_cab h2 a,
+#rtve .false_cab h2 span, #tve .false_cab h2 a {color:#fff;}
+#tve .false_cab .text,
+#rtve .false_cab .text {color:#aaa;}
+
+/*inc*/
+#tve .wrapper.header h1 span {font-family:'Roboto';font-weight:300;color:#fff;font-size: 280%;line-height: 1.143;letter-spacing: -1px;}
+

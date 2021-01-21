@@ -1,0 +1,46 @@
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+@font-face{
+		font-family :FontAwesome;
+		src:url(../fonts/webfonts/fa-solid-900.woff)
+	}
+	nav{
+		background-color:#F3FFE3;
+		text-align:center;
+	}
+	li{display:inline;
+		background-color:#CAFAFB;
+		color:brown;
+	}
+	a:hover{
+			background-color:aqua;
+			border:1px solid black;
+			color:brown;
+		}
+	a{font-size:2em;}
+	.cabecera{
+		text-align:center;
+		background-color:#F3FFE3;
+	}
+	table { 
+		width:100%;
+		border-collapse: collapse; 
+	} 
+	tr{
+		border-style:double;
+		border:3px black;
+	}
+	th, td {font-family:cursive;
+		border: 5px double black; 
+		padding: 20px; 
+	} 
+
+	tfoot{
+		background-image:url(../images/ies_los_sauces.jpg);
+		background-size: 4.5em;
+		background-position:left;
+		background-repeat: no-repeat;	
+	}

@@ -1,0 +1,17 @@
+﻿window.OneSignal = window.OneSignal || [];
+OneSignal.push(function () {
+	OneSignal.init({
+      appId: "bde9d112-fd1f-4717-a3d7-a77f93de6097"      
+    });	
+    var notificationPromptDelay = 30000;
+    
+    setTimeout(promptAndSubscribeUser, notificationPromptDelay);
+});
+
+function promptAndSubscribeUser() {
+    window.OneSignal.isPushNotificationsEnabled(function(isEnabled) {
+      if (!isEnabled) {
+        window.OneSignal.showSlidedownPrompt();
+      }
+    });
+  }

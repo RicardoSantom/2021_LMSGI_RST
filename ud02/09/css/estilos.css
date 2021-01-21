@@ -1,0 +1,115 @@
+@font-face{
+	font-family . Goldman, cursive;
+	src: url(../fonts/Goldman-Boldman-Bold,ttf);
+	}
+	@font-face{
+	font-family . Goldman, cursive;
+	src: url(../fonts/Goldman-Regular,ttf);
+	}
+	@font-face{
+	font-family . Goldman, cursive;
+	src: url(../fonts/ArchitectsDaughter-Regular,ttf);
+	}
+	@font-face{
+	font-family . FrederickattheGreat, cursive;
+	src: url(../fonts/FrederickattheGreat-Regular,ttf);
+	}
+	@font-face{
+	font-family . Parisienne, cursive;
+	src: url(../fonts/Parisienne-Regular,ttf);
+	}
+	body{
+		font-family:FrederickattheGreat,cursive;
+		background-image: url('../images/Le_petit_prince.png');
+		background-repeat:no-repeat;
+		background-position:top right;
+		margin-right:300px;
+	}
+
+h1{
+	font-weight:bold;
+	text-transform:capitalize;
+	font-size:3em;
+	color:Crimson;
+	text-decoration:underline;
+	text-decoration-style:double;
+	letter-spacing:5px;
+	font-style:oblique;
+	font-family:FrederickattheGreat-Regular;
+	}
+	p{
+		background-color: Crimson;
+		font-size: 2 em;
+		font-family:Goldman;
+		padding:5px 0;
+	}
+	p span{
+		color:white;
+	}
+	p:first-letter{
+		font-size: 2.5em;
+		
+	}
+	
+	.lista1>li, .lista2>li, .lista3>li{
+		font-size: 1,5 em;
+		border-style:dotted;
+		border-color:Crimson;
+		border-width: 1px;
+	}
+	.lista1{
+		list-style-position:inside;
+		list-style-type:circle;}
+	.lista2{
+		list-style-position:outside;
+		list-style-type:square;}
+		lista2 li:first-child{
+			font-family:ArchitectsDaughter;}
+			
+	.lista3{
+		list-style-position:inside;
+		list-style-image:url('../images/sqpurple.png');}
+		.lista3 li:last-child{
+			font-family:Parisienne;
+			
+		}
+	.lista4{
+		background-color:lightsalmon;
+		border: dashed 2px darkred;
+		list-style-type:none;
+		padding: 5px 20px;
+	}
+	.lista4 li{
+		background-color:darkred;
+		color:lightsalmon;
+		margin-top:5px;
+		padding-left:5px;
+	}
+	.lista4 li:before{
+		content:'#';
+		width:1em;
+		margin-left: -1em;
+		color:darkred;
+		display:inline-block;
+	}
+	.lista5{
+		background-color:lightsalmon;
+		list-style-type:none;
+		border-left-width:5px;
+		border-left-style: solid;
+		padding:5px;
+		border-color:darkred;
+	}
+	.lista6{
+		list-style:none;
+		color:darkred;
+	}
+	.lista6 li{
+		border-style:dotted;
+		border-width:1px;
+		border-color:darkred;
+		border-width:1px 1 px 0px 1px;
+	}
+	.lista6 li:last-child{
+		border-bottom-width:1px;
+	}

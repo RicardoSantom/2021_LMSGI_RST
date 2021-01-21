@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+	<channel>
+		<title>Radio Salix. IES los Sauces</title>
+		<link>http://ieslossauces.centros.educa.jcyl.es/sitio/index.cgi?wid_seccion=51</link>
+		<description>
+			<![CDATA[
+				<h1>Radio Salix: la radio del IES Los Sauces</h1>
+			]]>
+		</description>
+		<item>
+			<title>Onda Salix nº1</title>
+			<link>https://www.mixcloud.com/ondasalix/no1-para-que-te-enteres-onda-salix/</link>
+			<guid isPermaLink="true">https://www.mixcloud.com/ondasalix/no1-para-que-te-enteres-onda-salix</guid>
+			<description>
+			<![CDATA[
+			<h2>Onda Salix estrena su programa "Para que te enteres", con buena música y buen rollo.</h2>
+			<category>radio</category>
+			<category>educacion</category>
+			<p>Podrás escuchar 3 secciones de lo más interesante:</p>
+			<ul>
+				<li>- En ¿Cuál es el siguiente número? La maravillosa sucesión de Fibonacci</li>
+				<li>- En "Unos y Ceros", ¿es lo mismo wifi que internet?</li>
+				<li>- Día especial 25 N. ¿Qué sabes y qué opinas de ese día? Yolanda, trabajadora social de la Cruz Roja te saca de dudas.</li>
+				<li>- El proyecto Erasmus K3 en el que el centro está participando.</li>
+			</ul>
+			]]>
+			</description>
+		</item>
+		<item>
+			<title>Onda Salix nº2</title>
+			<link>https://www.mixcloud.com/ondasalix/no2-para-que-te-enteres-onda-salix/</link>
+			<guid isPermaLink="true">https://www.mixcloud.com/ondasalix/no2-para-que-te-enteres-onda-salix/</guid>
+			<description>
+			<![CDATA[
+			<h2>-Una nueva edición del programa "Para Que Te Enteres" de Onda Salix, la radio del IES "LOS SAUCES".</h2>
+			<category>radio</category>
+			<category>educacion</category>
+			<p>A continuación, de todo esto escucharás en esta edición de Radio Salix</p>
+			<ul>
+				<li>Noticias</li>
+				<li>- Mitología griega</li>
+				<li>- Matemáticas.</li>
+				<li>- Aula empresa.</li>
+				<li>- Unos y ceros.</li>
+				<li>- Paloteo.</li>
+			</ul>
+			]]>
+			</description>
+		</item>
+		<item>
+			<title>Onda Salix nº3</title>
+			<link>https://www.ivoox.com/n-3-para-te-enteres-audios-mp3_rf_62208741_1.html</link>
+			<guid isPermaLink="true">https://www.ivoox.com/n-3-para-te-enteres-audios-mp3_rf_62208741_1.html</guid>
+			<description>
+			<![CDATA[
+			<h2>Programa nº3 de Radio Salix, la radio del IES Los Sauces. Ahora en ivoox.</h2>
+			<category>radio</category>
+			<category>educacion</category>
+			<p>En esta edición de para que te enteres...:</p>
+			<ul>
+				<li>- Noticias.</li>
+				<li>- Mitología.</li>
+				<li>- El Siguiente Número.</li>
+				<li>- Cristina Folgado.</li>
+				<li>- Entrevista 2ºBach Proyectos COVID-19.</li>
+				<li>- Unos y Ceros.</li>
+			</ul>
+			]]>
+			</description>
+		</item>
+		<item>
+			<title>Onda Salix nº4</title>
+			<link>https://www.ivoox.com/n-4-para-te-enteres-onda-audios-mp3_rf_62853064_1.html</link>
+			<guid isPermaLink="true">https://www.ivoox.com/n-4-para-te-enteres-onda-audios-mp3_rf_62853064_1.html</guid>
+			<description>
+			<![CDATA[
+			<h2>Cerramos el trimestre con la emisión en directo del programa cargado de nuevas secciones.</h2>
+			<category>radio</category>
+			<category>educacion</category>
+			<p>No te lo pierdas, en televisión Benavente no se lo han perdido..</p>
+			<ul>
+				<li>- Balance del año de la directora del centro</li>
+				<li>- Villancicos</li>
+				<li>- Y las secciones de siempre.</li>
+			</ul>
+			]]>
+			</description>
+		</item>
+	</channel>
+</rss>

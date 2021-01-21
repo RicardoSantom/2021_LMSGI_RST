@@ -1,0 +1,76 @@
+body{
+	/*Inutili
+	/*background-image:url(../images/images.jfif);
+	background-repeat:no-repeat;
+	background-size:2100px auto;*/
+	background-color:#FFDFD3;
+}
+.izquierda{
+	display:inline;
+	float:left;
+	width:25%;
+	height:900px;
+}
+.derecha{
+	display:inline;
+	float:right;
+	width:75%;
+	height:900px;
+}
+h1{background-color:lightblue;
+	color:lightyellow;
+	text-align:center;
+	font-size:60px;
+	margin:10px auto;
+	font-font-family:;
+}
+ul{
+	background-color:grey;
+	width:300px;
+	margin-left:30px;
+	margin-right:600px;
+	font-family:cursive;
+	margin:10px auto;
+}
+/*ol{
+	list-style:none;
+}*/
+a{
+	color:lightblue;
+}
+li:hover{
+	color:lightyellow;
+}
+a:hover{
+	color:lightyellow;
+}
+/*A continuación dejo comentadas las reglas de estilo que afectan a la división en dos div del index
+en la implementación de la página sin estos dos div, estas reglas que siguen son innecesarias.*/
+/*#ud01{
+	display:inline-block;
+	margin-top:50px;
+	padding-left:10px;
+	text-align:center;
+	width:100%;
+}
+#ud02{
+	display:inline-block;
+	margin-top:50px;
+	padding-left:10px;
+	text-align:center;
+	width:100%;
+}
+#ud03{
+	display:inline-block;
+	padding-left:10px;
+	text-align:center;
+	margin-top:50px;
+	width:100%;
+}
+ol a{
+	color:grey;
+}
+ol li{
+	background-color:lightblue;
+}
+ol:hover{color:lightblue;}*/

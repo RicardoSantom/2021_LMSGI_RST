@@ -1,0 +1,44 @@
+
+div{
+	border-width:10px;
+	border-color: black;
+	border-style: outset;
+	height:300px;
+	width:300px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	margin:10px;
+	background-size: 20%;
+	cursor: row-resize;
+}
+
+div:nth-child(1){
+	background-image: url("../images/OIP.jpg");
+	background-position: center;
+	border-radius: 45px;
+}
+div:nth-child(2){
+	background-image: url("../images/OIP.jpg"),url("../images/OIP.jpg");
+	background-position: 15% 15%,85% 85%;
+	border-radius: 45px;
+}
+div:nth-child(3){
+	background-image: url("../images/OIP.jpg"),url("../images/OIP.jpg"),url("../images/OIP.jpg");
+	background-position: 15% 15%,85% 85%,50% 50%;
+	border-radius: 45px;
+}
+div:nth-child(4){
+	background-image: url("../images/OIP.jpg"),url("../images/OIP.jpg"),url("../images/OIP.jpg"),url("../images/OIP.jpg");
+	background-position: 15% 15%,85% 85%,15% 85%,85% 15%;
+	border-radius: 45px;
+}
+div:nth-child(5){
+	background-image: url("../images/OIP.jpg"),url("../images/OIP.jpg"),url("../images/OIP.jpg"),url("../images/OIP.jpg"),url("../images/OIP.jpg");
+	background-position: 15% 15%,85% 85%,50% 50%,15% 85%,85% 15%;
+	border-radius: 45px;
+}
+div:nth-child(6){
+	background-image: url("../images/OIP.jpg"),url("../images/OIP.jpg"),url("../images/OIP.jpg"),url("../images/OIP.jpg"),url("../images/OIP.jpg"),url("../images/OIP.jpg");
+	background-position: 15% 15%,85% 85%,15% 50%,85% 50%,15% 85%,85% 15%;
+	border-radius: 45px;
+}

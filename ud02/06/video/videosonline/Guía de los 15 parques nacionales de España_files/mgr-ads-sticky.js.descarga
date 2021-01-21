@@ -1,0 +1,108 @@
+/*
+	MGR Ads Sticky Bottom
+
+	- Unique ID
+	- Control showing only in mobile
+	- Attach to "mgr-ads-slotRendered" to show 
+	- Generate HTML
+	- AutoRefresh
+*/
+var MGRAdsSticky = function (c) {
+    if (typeof require === 'undefined') return;
+
+    require(['jquery', 'mangiro.ads'], function ($, Ads) {
+        var _getPrefixedClass = function (c) {
+            return _classPrefix + '-' + c;
+        }
+
+        // Check config
+        var _config = {};
+        _config.cssFile = c.cssFile || 'https://static.rba.nom.es/ads/1.1/mgr-ads-sticky.css';
+        _config.slot = c.slot || '';
+        _config.position = c.position || 'sm';
+        _config.refresh = c.refresh || false;
+        _config.refreshTime = c.refreshTime || 30;
+
+        if (_config.slot === '' || _config.position === '') return;
+
+        // Check mobile
+        var _mobile = (typeof isMobile !== "undefined")
+            ? isMobile.any()
+            : (screen.width <= 760);
+
+        if (!_mobile) return;
+
+        // Append CSS
+        var cssId = 'mgr-ads-sticky-css';
+        if (!document.getElementById(cssId)) {
+            var head = document.getElementsByTagName('head')[0];
+            var link = document.createElement('link');
+            link.id = cssId;
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.media = 'all';
+            link.href = _config.cssFile;
+            head.appendChild(link);
+        }
+
+        // UniqueID
+        var _uid = '' + +new Date();
+        var _classPrefix = 'mgr-ads';
+        var _gptId = 'div-gpt-ad-' + _uid;
+
+        // Create HTML structure
+        var mainNode = document.createElement('div');
+        mainNode.className = _getPrefixedClass('sticky');
+
+        var containerNode = document.createElement('div');
+        containerNode.className = _getPrefixedClass('container');
+        mainNode.appendChild(containerNode);
+
+        var adNode = document.createElement('div');
+        adNode.className = 'creatividad mgr-ad';
+        containerNode.appendChild(adNode);
+
+        var gptNode = document.createElement('div');
+        gptNode.id = _gptId;
+        adNode.appendChild(gptNode);
+
+        var btnNode = document.createElement('button');
+        btnNode.className = _getPrefixedClass('close');
+        btnNode.setAttribute('aria-label', 'Cerrar el anuncio');
+        containerNode.appendChild(btnNode);
+
+        document.body.appendChild(mainNode);
+
+        var stickyAd = {
+            id: _gptId
+            , slot: _config.slot
+            , name: 'Sticky 1'
+            , initLoad: true
+            , slotSizes: [[320, 100]]
+            , position: [_config.position]
+            , customTargets: {}
+            , mapSizes: { "Name": "sticky_mapping", "Mappings": [{ "Browser": [768, 10], "Ads": [] }, { "Browser": [0, 0], "Ads": [[320, 100], [320, 50]] }] }
+        };
+        mgr.ads.pushAd(stickyAd);
+
+        document.addEventListener("mgr-ads-slotRendered", function (e) {
+            var $container = $("#" + e.detail.slot);
+            $container.find("iframe").on("load", function () {
+                $container.css({ "display": "block", "height": "auto" });
+                if (e.detail.slot === _gptId && _config.refresh) {
+                    setTimeout(function () {
+                        mgr.ads.refreshAd(e.detail.slot);
+                    }, _config.refreshTime * 1000);
+                }
+            });
+
+            if (e.detail.slot === _gptId) {
+                $('.mgr-ads-sticky').addClass("rendered");
+            }
+        });
+
+        $('.mgr-ads-sticky .mgr-ads-close').on('click', function () {
+            $('.mgr-ads-sticky').remove();
+        });
+    });
+};

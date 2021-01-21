@@ -1,0 +1,35 @@
+﻿(function (root, factory) {
+    if (typeof define === "function" && define.amd) {
+        define("trackPopup", ["jquery", "throttle"], function (a0, a1) {
+            return factory(a0, a1);
+        });
+    } else if (typeof exports === "object") {
+        module.exports = factory(require("jquery"), require("throttle"));
+    } else {
+        factory(jQuery, Cowboy);
+    }
+})(this, function ($, $cow) {
+    if (typeof $cow === "undefined" && typeof Cowboy !== "undefined") $cow = Cowboy;
+    if (typeof $cow === "undefined") $cow = $;
+
+    var trackPopup = {
+        isArticle: function () {
+            var classList = "";
+            if (document.getElementById('popUp-content') != null) document.getElementById('popUp-content').className.split(/\s+/);
+
+            return classList.indexOf('popUp-article') > -1;
+        },
+        track: function (action) {
+            if (typeof dataLayer != "undefined") {
+                dataLayer.push({
+                    event: "GAevent",
+                    eventCategory: "popup",
+                    eventAction: action,
+                    eventLabel: this.isArticle() ? 'article' : 'newsletter'
+                });
+            }
+        },
+    };
+
+    return trackPopup;
+});

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<rss version="2.0">
+	<channel>
+			<title>LMSGI-RSS-Ricardo Santiago Tomé</title>
+			<link>http://192.168.2.102/index.html</link>
+		<description>Documento RSS en el que se puden consultar las prácticas de edición en CSS de Ricardo
+					Santiago Tomé. Alumno de 1º de DAW en el IES Los Sauces
+		</description>
+		<language>es-es</language>
+		<lastBuildDate>Mon, 18 Jan 2021 22:50:00 +0100</lastBuildDate>
+		<pubDate>Mon, 18 Jan 2021 22:50:00 +0100</pubDate>
+		<copyright>Ricardo Santiago Tomé</copyright>
+		<category>Educación</category>
+		<skipDays>
+			<day>Sunday</day>
+			<day>Saturday</day>
+		</skipDays>
+		<skipHours>
+			<hour>0</hour>
+			<hour>1</hour>
+			<hour>2</hour>
+			<hour>3</hour>
+			<hour>4</hour>
+			<hour>5</hour>
+			<hour>6</hour>
+			<hour>7</hour>
+			<hour>8</hour>
+		</skipHours>
+		<item>
+			<title>Practica nº10</title>
+			<link>http://192.168.2.102/ud02/10/index.html</link>
+			<description>En esta práctica aplicamos estilos con CSS a una tabla.<![CDATA[<h3>Aplicando estilos
+				a una tabla html con css</h3>]]>
+			</description>
+			<category>html</category>
+			<author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
+			<pubDate>Mon, 18 Jan 2021 22:50:00 +0100</pubDate>
+			<enclosure url="http://192.168.2.102/images/practica10.png"  length="10642" type="image/png"></enclosure>
+			<guid isPermaLink="true">http://192.168.2.102/ud02/10/index.html</guid>
+		</item>
+		<item>
+			<title>Practica nº11</title>
+			<link>http://192.168.2.102/ud02/11/index.html</link>
+			<description>En esta práctica aplicamos estilos con CSS a listas. También vemos como posicionar
+				texto sobre una imagen.<![CDATA[<h3>Posicionamiento de texto html sobre imagen con css</h3>]]>
+			 </description>
+			 <pubDate>Mon, 18 Jan 2021 22:50:00 +0100</pubDate>
+			 <category>css</category>
+			<author>ricardo.santom@educa.jcyl.es (Perico los Palotes)</author>
+			<enclosure url="http://192.168.2.102/images/practica11.png" length="10642" type="image/png"></enclosure>
+			<guid isPermaLink="true">http://192.168.2.102/ud02/11/index.html</guid>
+		</item>
+		<item>
+			<title>Practica nº12</title>
+			<link>http://192.168.2.102/ud02/12/index.html</link>
+			<description>Practicamos con div`s y como posicionarlos en esta práctica<![CDATA[<h3>Posicionando
+				div`s con css</h3>]]></description>
+			<category>Educación</category>
+			<pubDate>Mon, 18 Jan 2021 22:50:00 +0100</pubDate>
+			<author>ricardo.santom@educa.jcyl.es (Uno que pasaba por alli)</author>	
+			<enclosure url="http://192.168.2.102/images/practica12.png" length="10642" type="image/png"></enclosure>			
+			<guid isPermaLink="true">http://192.168.2.102/ud02/12/index.html</guid>
+		</item>
+		<item>
+			<title>Practica nº13</title>
+			<link>http://192.168.2.102/ud02/13/index.html</link>
+			<description>En esta ocasión, probamos posicionamiento de texto e imagen y aplicamos estilo de 
+				edición periodístico.<![CDATA[<h3>Con css aplico estilo periodístico a una página html</h3>]]>
+			</description>
+			<category>Estilo periodístico en página web</category>
+			<pubDate>Mon, 18 Jan 2021 22:50:00 +0100</pubDate>
+			<author>ricardo.santom@educa.jcyl.es (Juan sin Medio)</author>
+			<enclosure url="http://192.168.2.102/images/practica13.png" length="86034" type="image/png"></enclosure>
+			<guid isPermaLink="true">http://192.168.2.102/ud02/13/index.html</guid>
+		</item>
+		<item>
+			<title>Practica nº14</title>
+			<link>http://192.168.2.102/ud02/14/index.html</link>
+			<description>Con CSS aplicamos estilo a una lista de los libros más vendidos.<![CDATA[<h3>Aplicando estilos
+				a una tabla html con css</h3>]]>
+			</description>
+			<category>Literatura</category>
+			<pubDate>Mon, 18 Jan 2021 22:50:00 +0100</pubDate>
+			<author>ricardo.santom@educa.jcyl.es (Gandalf)</author>
+			<enclosure url="http://192.168.2.102/images/practica14.png" length="91347" type="image/png"></enclosure>
+			<guid isPermaLink="true">http://192.168.2.102/ud02/14/index.html</guid>
+		</item>
+	</channel>
+</rss>

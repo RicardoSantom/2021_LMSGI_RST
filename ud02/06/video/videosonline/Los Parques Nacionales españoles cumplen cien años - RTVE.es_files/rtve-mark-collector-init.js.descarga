@@ -1,0 +1,392 @@
+if (!Array.prototype.find) {
+	Array.prototype.find = function(predicate) {
+		if (this == null) {
+			throw new TypeError('Array.prototype.find called on null or undefined');
+		}
+		if (typeof predicate !== 'function') {
+			throw new TypeError('predicate must be a function');
+		}
+		var list = Object(this);
+		var length = list.length >>> 0;
+		var thisArg = arguments[1];
+		var value;
+            
+		for (var i = 0; i < length; i++) {
+			value = list[i];
+			if (predicate.call(thisArg, value, i, list)) {
+				return value;
+			}
+		}
+		return undefined;
+	};
+}
+
+function loadScript(url, callback)
+{
+    // Adding the script tag to the head
+    var head = document.head;
+	var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = url;
+
+	//Events for cross browser compatibility
+    script.onreadystatechange = callback;
+    script.onload = callback;
+
+    // Fire the loading
+    head.appendChild(script);
+}
+
+function getCookie(name)
+{
+    var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+	var value = "";
+    if (match) {
+		value = match[2];
+    }else{
+        console.log('Something went wrong recovering cookie ---' + name + '---');
+    }
+	return value;
+}
+	
+function loadMarkCollector() {
+	
+	const URLDRM =  "/drmn/usertracker/multimedia/";
+
+	function setUtracker(uTracker,uTrackerData){
+		
+		if (typeof uTrackerData.digitalData.page.category.primaryCategory !== "undefined" && uTrackerData.digitalData.page.category.primaryCategory != ""){
+			uTracker.digitalData.page.category.primaryCategory = uTrackerData.digitalData.page.category.primaryCategory;
+		}
+				
+		if (typeof uTrackerData.digitalData.page.category.topics !== "undefined" && uTrackerData.digitalData.page.category.topics != ""){
+				uTracker.digitalData.page.category.topics = uTrackerData.digitalData.page.category.topics;
+		}	
+				
+		if (typeof uTrackerData.digitalData.page.pageInfo.language !== "undefined" && uTrackerData.digitalData.page.pageInfo.language != ""){
+				uTracker.digitalData.page.pageInfo.language = uTrackerData.digitalData.page.pageInfo.language;
+		}
+					
+		if (typeof uTrackerData.digitalData.page.category.channel !== "undefined" && uTrackerData.digitalData.page.category.channel != ""){
+			uTracker.digitalData.page.category.channel = uTrackerData.digitalData.page.category.channel;			
+		}		
+		
+		if (typeof uTrackerData.digitalData.page.pageInfo.title !=="undefined" && uTrackerData.digitalData.page.pageInfo.title != ""){
+				uTracker.digitalData.page.pageInfo.title = uTrackerData.digitalData.page.pageInfo.title;
+		}
+		
+		if (typeof uTrackerData.digitalData.page.pageInfo.sgce !=="undefined" && uTrackerData.digitalData.page.pageInfo.sgce != ""){
+				uTracker.digitalData.page.pageInfo.sgce = uTrackerData.digitalData.page.pageInfo.sgce;
+		}
+				
+		if ((typeof uTracker.digitalData.page.category.pageType == "undefined" || uTracker.digitalData.page.category.pageType == "") &&
+			typeof uTrackerData.digitalData.page.category.pageType !=="undefined" && uTrackerData.digitalData.page.category.pageType!="")	{
+			uTracker.digitalData.page.category.pageType = uTrackerData.digitalData.page.category.pageType;		
+		}
+
+		if ((typeof uTracker.digitalData.page.category.pageID == "undefined" || uTracker.digitalData.page.category.pageID == "") &&
+			typeof uTrackerData.digitalData.page.pageInfo.pageID !== "undefined" && uTrackerData.digitalData.page.pageInfo.pageID != "")	{
+			uTracker.digitalData.page.pageInfo.pageID = uTrackerData.digitalData.page.pageInfo.pageID;
+		}
+
+		if (typeof uTrackerData.digitalData.page.sysInfo !== "undefined" && uTrackerData.digitalData.page.sysInfo!="" &&
+			typeof uTrackerData.digitalData.page.sysInfo.sysEnv !== "undefined" && uTrackerData.digitalData.page.sysInfo.sysEnv != "")	{
+				uTracker.digitalData.page.sysInfo.sysEnv = uTrackerData.digitalData.page.sysInfo.sysEnv;
+		}	
+
+		if (uTracker.digitalData.page.category.pageType == "programa" &&
+			typeof uTrackerData.digitalData.pageInstanceID !== "undefined" && uTrackerData.digitalData.pageInstanceID!="")	{
+				uTracker.digitalData.pageInstanceID = uTrackerData.digitalData.pageInstanceID.replace(/^https/, 'http').replace("www.rtve.es", "rtve.es").replace(/\/$/, '');
+		}
+		
+		return uTracker;
+	}
+
+	function getUTrackerDrmn(uTracker,id){
+
+		url = URLDRM +id;
+
+		try{
+
+			var uTrackerData = (function () {
+				var data = null;
+				jQuery.ajax({
+					'async': false,
+					'global': false,
+					'url': url,
+					'dataType': "json",
+					success: function(result) {
+						data = result;
+					},
+					error: function() {	
+						console.log("Error Invocando llamada ajax drmn..."+id);			    	
+					}
+				});
+				return data;
+			})();	
+			
+			uTracker = setUtracker(uTracker,uTrackerData);
+
+		}
+		catch (e) {
+				console.log(e);
+		}
+				
+		return uTracker;		
+
+	}
+	
+	//Return content-type path depending on the parameter value
+	function _getContentType(contentType){
+		var type = '/pr';
+		if (contentType == 'videos')
+			type = '/v';
+		else if (contentType == 'audios')
+			type = '/a';
+		
+		return type;
+	}
+	
+	console.log("Loading user tracker ...");
+	var urlDrmnBlackList = [/.rtve.es\/sorteos/,/.rtve.es\/loteria-nacional/,/.rtve.es\/television\/cocina\/buscador-recetas\/similar/];
+	var uTrackerTmp = document.getElementById('usertracker');
+	var uTracker = 	{digitalData:{page:{category:{pageType:""},pageInfo:{language:"es-ES"}, sysInfo:{sysEnv:"web"}},pageInstanceID:""}};
+	var path = location.pathname;
+	var host = location.host;
+			
+	uTracker.digitalData.pageInstanceID = window.location.href;
+	uTracker.digitalData.page.pageInfo.title = document.title;
+	
+	var embed = document.getElementById('embed');
+	var isEmbeded = ((typeof embed !== 'undefined' && embed !== null) || window.frameElement != null);
+	if (isEmbeded)
+		uTracker.digitalData.page.pageInfo.isEmbed = isEmbeded;
+
+	var isUrlDrmnBlackList= urlDrmnBlackList.some(function(data){return window.location.href.match(data);});
+
+	if (!isUrlDrmnBlackList && uTrackerTmp && uTrackerTmp.getAttribute('data-json') != ''){
+		
+		var uTrackerData = JSON.parse(uTrackerTmp.getAttribute('data-json'));
+		var programPage = path.match(/\/(infantil|alacarta)\/(series|videos|audios|videos-audios)\/[a-zA-Z0-9\-_]+\/$/);
+		var finalPage = path.match(/(\/encuesta-|\/)(\d+)(\/|.shtml)?$/);
+		var teletextoPage = path.match(/(^\/television\/teletexto\/)/);
+		var resultadosEleccPage = host.match(/resultados\-elecciones/);
+		var programListPage = path.match(/(^\/alacarta\/programas\/)/);
+		if (finalPage && !programPage && !teletextoPage && !programListPage && !resultadosEleccPage) {
+			var pageType = ["n", "noticia"];
+			if (path.match(/(\/infantil\/serie\/|\/alacarta\/videos|\/playz\/videos)/)){
+				pageType = ["v", "video"];
+			}else if (path.match(/(\/alacarta\/audios|\/playz\/audios)/)){
+				pageType = ["a", "audio"];
+			} else if (path.match(/(\/fotogalerias)/)){
+				pageType = ["f", "fotogaleria"];
+			} else if (path.match(/(\/juegos)/)){
+				pageType = ["j", "juego"];
+			} else if (path.match(/(\/concursos)/)){
+				pageType = ["c", "concurso"];
+			} else if (path.match(/(\/descargables)/)){
+				pageType = ["d", "descargable"];
+			}else if (path.match(/^\/temas\//)){
+				pageType = ["", "tematica"];
+			}
+			
+			uTracker.digitalData.page.pageInfo.pageID = finalPage[2];
+			uTracker.digitalData.page.category.pageType = pageType[1];
+			if (pageType[0] != "")
+				uTracker.digitalData.pageInstanceID = "http://rtve.es/" + pageType[0] + "/" + finalPage[2];
+
+		}else{
+			var pageType = "portada";
+			if (path.match(/(\/infantil\/series\/[^#]+\/|\/alacarta\/videos|\/alacarta\/audios)/)){
+				pageType = "programa";
+			}else if (path.match(/^\/buscador/)){
+				pageType = "buscador";
+			}else if (path.match(/^\/(lab|playz\/lab)\//)){
+				pageType = "lab";
+			}else if (host.match(/resultados\-elecciones/)){
+				pageType = "resultados";
+			}
+			uTracker.digitalData.page.category.pageType = pageType;
+		}
+		
+		uTracker = setUtracker(uTracker,uTrackerData);
+	}else{
+		
+		var pageType = "portada";
+		if (host.match(/(blogs|blog)/)){
+			pageType = "blog";
+		}else if (host.indexOf("lab.rtve.es")!=-1){
+			pageType = "lab";
+		}else if (isEmbeded){ //Check embed
+			var finalPage = path.match(/\/drmn\/embed\/(video|audio)\/(\d+)/);
+			if (finalPage){
+				pageType = finalPage[1];
+				uTracker.digitalData.page.pageInfo.pageID = finalPage[2];
+				uTracker.digitalData.pageInstanceID = "http://rtve.es/" + finalPage[1].substring(0,1) + "/" + finalPage[2];
+			}
+		}
+		uTracker.digitalData.page.category.pageType = pageType;
+	}
+	
+	//Set the attribute deviceType
+	uTracker.digitalData.page.sysInfo.deviceType = Detectizr.device.type;
+	
+	var uidValue = getCookie('UID');	
+	if (typeof uidValue !== 'undefined' && uidValue != null && uidValue != ''){
+		var userId = window.atob(decodeURIComponent(uidValue));
+		uTracker.digitalData.user = {profile: {profileID: userId}};
+	}
+
+    var loadstartDate = new Date();
+	var viewContext = uTracker;
+	var initRecoList = false;		
+	var heartbeatTime = 50000;
+	
+    MarkCollector.init('632d7ac0-8128-11e8-9011-7d1f99b2d2e6', 'RTVE Application', 'RTVE View', viewContext).then(function (activeTags) {
+		
+		var heartbeatActiveTag = activeTags.find(function (tag) {          
+			return tag.event && tag.event.eventName == "View Heartbeat";
+		});			
+		if (heartbeatActiveTag != null){
+			MarkCollector.eventController.stopTimedActiveTag(heartbeatActiveTag);
+			heartbeatActiveTag.event.periodicity = heartbeatTime;
+			MarkCollector.eventController.startTimedActiveTag(heartbeatActiveTag);
+		}
+		
+        // Launch View Event
+        var viewActiveTag = activeTags.find(function (tag) {
+            return tag.event && tag.event.eventName == "View";
+        });
+        if (viewActiveTag) {
+            if (window.performance.timing.loadEventEnd > 0) { // If the load event has completed already, send the View Mark with the load time.
+                let loadTime = window.performance.timing.loadEventEnd - window.performance.timing.navigationStart;
+                MarkCollector.eventController.recordActiveTagEvent(viewActiveTag, { loadTime: loadTime }).catch(function(error){
+                    console.log(error)
+                });
+            }
+            else {  // If the load event is yet to happen, send the View Mark with the load time when it happens.
+                window.addEventListener("load", function(){
+                    setTimeout(function(){ // Ensures the value of LoadEventEnd is properly set by the browser
+                        let loadTime = window.performance.timing.loadEventEnd - window.performance.timing.navigationStart;
+                        if (loadTime <= 0) { // Safari does not support LoadEventEnd, so we must make an estimate with DateTimes.
+                            loadTime = (new Date()).getTime() - loadstartDate.getTime()
+                        }
+                        MarkCollector.eventController.recordActiveTagEvent(viewActiveTag, { loadTime: loadTime }).catch(function(error){
+                            console.log(error)
+                        });
+                    }, 0);
+                });
+            }
+        }	
+
+        //Catch BeforeLoad event
+        var beforeunloadActiveTag = activeTags.find(function (tag) {
+            return tag.event && tag.event.eventName == "Before Unload";
+        });
+        if(beforeunloadActiveTag){
+			var isOnIOS = navigator.userAgent.match(/iPad/i)|| navigator.userAgent.match(/iPhone/i);
+			var eventName = isOnIOS ? "pagehide" : "beforeunload";
+            window.addEventListener(eventName, function(){
+                MarkCollector.eventController.recordActiveTagEvent(beforeunloadActiveTag, {}).catch(function(error){
+                    console.log(error)
+                });
+            });
+        }
+
+        // Attach SocialBox Share
+        var shareActiveTag = activeTags.find(function (tag) {
+            return tag.event && tag.event.eventName == "Share";
+        });
+        if (shareActiveTag) {
+            let socialBoxElements = document.getElementsByClassName("socialBox");
+            for (let boxIndex = 0; boxIndex < socialBoxElements.length; boxIndex++) {
+                let socialBoxLinks = socialBoxElements[boxIndex].getElementsByTagName("A");
+                for (let linkIndex = 0; linkIndex < socialBoxLinks.length; linkIndex++) {
+                    socialBoxLinks[linkIndex].onclick = function (event) {
+                        MarkCollector.eventController.recordActiveTagEvent(shareActiveTag, {});
+                    };
+                }
+            }
+        }
+		
+		//Control de recoClics para recomendaciones
+		var recoClickActiveTag = activeTags.find(function (tag) {	
+			return tag.event && tag.event.eventName == "RecoClick";
+		});
+		if (!initRecoList && recoClickActiveTag && jQuery("ul.recoList").length > 0){
+			initRecoList = true;
+			document.addEventListener("VirtualPageView", function(event){
+				var item = jQuery(event.srcElement.activeElement);
+				if (item.length > 0){
+					var ul = item.closest("ul.recoList");
+					if (ul.length > 0) {
+						var assetId = item.siblings("div.mediaBox").data().assetid.toString();
+						if (assetId.length > 0){
+							var assetSplit = assetId.split('_');
+							var contentId = assetSplit[0];
+							var contentType = assetSplit[2];
+							var data = ul.data();
+							MarkCollector.eventController.recordActiveTagEvent(recoClickActiveTag, {
+								recoId: data._id,
+								criteriaId: data.querycriteria,
+								queryItem: data.queryitem,
+								item: _getContentType(contentType) + '/' + contentId							
+							}).catch(function(error){
+								console.log(error)
+							});
+						}
+					}
+				}
+			}, false);
+			document.addEventListener("click", function(event){
+				var item = jQuery(event.target);
+				if (item.length > 0){
+					var ul = item.closest("ul.recoList");
+					if (ul.length > 0) {
+						var assetId = item.siblings("div.mediaBox").data().assetid.toString();
+						if (assetId.length > 0){
+							var assetSplit = assetId.split('_');
+							var contentId = assetSplit[0];
+							var contentType = assetSplit[2];
+							var data = ul.data();
+							MarkCollector.eventController.recordActiveTagEvent(recoClickActiveTag, {
+								recoId: data._id,
+								criteriaId: data.querycriteria,
+								queryItem: data.queryitem,
+								item: _getContentType(contentType) + '/' + contentId							
+							}).catch(function(error){
+								console.log(error)
+							});
+						}
+					}
+				}
+			}, false);
+		}
+
+    }).catch(function (error) {
+        console.log(error)
+    });
+}
+
+var maxInitTimesMC = 10;
+var initTimesMC = 0;
+function initMarkCollector(){
+	initTimesMC++;
+	if (typeof MarkCollector !== "undefined"){
+		if (typeof jQuery == "undefined"){
+			console.log("Loading jQuery from MarkCollector init ...")
+			loadScript("https://code.jquery.com/jquery-1.12.4.min.js", initMarkCollector);
+		} else if (typeof Detectizr == "undefined"){
+			console.log("Loading Detectizr from MarkCollector init ...")
+			loadScript("https://cdnjs.cloudflare.com/ajax/libs/detectizr/2.2.0/detectizr.min.js", initMarkCollector);
+		} else {
+			loadMarkCollector();
+		}
+	}else if (initTimesMC < maxInitTimesMC){
+		console.warn("MarkCollector init process waiting (" + initTimesMC + ") for jQuery(" + jQuery + ") and/or MarkCollector(" + MarkCollector.name + ").");
+		setTimeout(function(){initMarkCollector();}, 1000);
+	}
+}
+
+initMarkCollector();
+

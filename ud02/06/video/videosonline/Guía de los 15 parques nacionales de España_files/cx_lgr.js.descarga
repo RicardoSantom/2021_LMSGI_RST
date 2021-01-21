@@ -1,0 +1,28 @@
+(function(d,s){try{e=d.createElement(s);e.type='text/java'+s;e.async='async'; e.src='http'+('https:'===location.protocol?'s://s':'://')+'cdn.cxense.com/cx.js'; t=d.getElementsByTagName(s)[0];t.parentNode.insertBefore(e,t);}catch(er){}})(document,'script');
+(function(d,s){try{e=d.createElement(s);e.type='text/java'+s;e.async='async'; e.src='https://code3.adtlgc.com/js/lagora_init.js'; t=d.getElementsByTagName(s)[0];t.parentNode.insertBefore(e,t);} catch(er){}})(document,'script');
+var cX = cX || {}; cX.callQueue = cX.callQueue || [];
+cX.callQueue.push(['sync', 'appnexus']);
+cX.callQueue.push(['invoke', function() {
+    var memberId = '7037';
+    var persistedQueryId = 'd13ea6710e43b62c34b41ca4869c0e1f11fa2290';
+    cX.getUserSegmentIds({
+        persistedQueryId: persistedQueryId,
+        callback: function(cxSegments) {
+            if (typeof segmentIds === 'array' && segmentIds.length && segmentIds.length > 1) {
+                var e = document.createElement('img');
+                e.width = 1;
+                e.height = 1;
+                e.alt = '';
+                e.border = 0;
+                var cxenseSegmentParams = '&'+encodeURIComponent('add_code')+'=';
+                for (var i = 0; i < Math.min(cxSegments.length, 40); i++){
+                    cxenseSegmentParams += 'cxsegment_' + encodeURIComponent(cxSegments[i]);
+                    if (i !== (Math.min(cxSegments.length,40)-1)) cxenseSegmentParams += ',';
+                }
+                e.src = '//ib.adnxs.com/seg?'+cxenseSegmentParams+ '&member=7037';
+                t = document.getElementsByTagName('body')[0];
+                t.parentNode.appendChild(e);
+            }
+        }
+    });
+}]);
