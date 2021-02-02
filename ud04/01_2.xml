@@ -28,6 +28,7 @@
         <anyo>2021</anyo>-->
     </fecha>
     <asunto>Prueba de mensaje</asunto>
+    <mensaje>Nada nuevo bajo el sol</mensaje>
     <fichero tipo="application/pdf">informe.pdf </fichero>
     <fichero tipo="image/jpeg">foto.jpg</fichero>
 </mail>
