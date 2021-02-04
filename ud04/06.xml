@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="06.css" ?>
+<!DOCTYPE codigo [
+<!ELEMENT codigo (lenguaje)>
+<!ELEMENT lenguaje (java, html)>
+<!ELEMENT html (#PCDATA)>
+<!ELEMENT java (#PCDATA)>
+]>
+<codigo>
+    <lenguaje>
+        <java>
+         JAVA
+            <![CDATA[
+            
+            
+            
+               #include<stdio.h>
+               int main()
+               {
+                float nota;
+                printf(\n Introduzca nota(real): ";
+                scanf("%f",&nota);
+                if(5<=nota9
+                    printf("\n APROBADO");
+                return 0;
+                }
+            ]]>
+        </java>
+        <html>
+         HTML
+            
+            
+            
+            <![CDATA[
+            
+            
+            
+            
+            
+                <!DOCTYPE html>
+                <html>
+                <body>
+                
+                <h1>My First Heading</h1>
+                
+                <p>My first paragraph.>/p>
+                
+                </body>
+                </html>
+            ]]>
+        </html>
+    </lenguaje>
+</codigo>

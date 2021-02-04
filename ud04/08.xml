@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lugares SYSTEM '08.dtd'>
+<lugares>
+    <texto>En el </texto>
+    <lugar>polo norte</lugar>
+    <texto>hace mucho frio.Pero,en el </texto>
+    <lugar>Desierto del Sahara</lugar>
+    <texto>hace mucho calor.</texto>
+</lugares>

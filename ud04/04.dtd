@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!ELEMENT horario (dias)*>
+<!ELEMENT dias (lunes|martes|miercoles|jueves|viernes)*>
+<!ELEMENT lunes (hora1|hora2|hora3|hora4|hora5|hora6)*>
+<!ELEMENT hora1 (tramo|profesor|asignatura)*>
+<!ELEMENT tramo (#PCDATA)>
+<!ELEMENT profesor (#PCDATA)>
+<!ELEMENT asignatura (#PCDATA)>
+<!ELEMENT hora2 (tramo|profesor|asignatura)*>
+<!ELEMENT hora3 (tramo|profesor|asignatura)*>
+<!ELEMENT hora4 (tramo|profesor|asignatura)*>
+<!ELEMENT hora5 (tramo|profesor|asignatura)*>
+<!ELEMENT hora6 (tramo|profesor|asignatura)*>
+<!ELEMENT martes (hora1|hora2|hora3|hora4|hora5|hora6)*>
+<!ELEMENT miercoles (hora1|hora2|hora3|hora4|hora5|hora6)*>
+<!ELEMENT jueves (hora1|hora2|hora3|hora4|hora5|hora6)*>
+<!ELEMENT viernes (hora1|hora2|hora3|hora4|hora5|hora6)*>

@@ -1,0 +1,12 @@
+java::after{
+    color:red;
+}
+html::before{
+    color:red;
+}
+codigo{
+    white-space:pre;
+}
+lenguaje::after {
+    content:''\A'';white-space:pre;
+}

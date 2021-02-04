@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT lugares (texto, lugar, texto, lugar, texto)>
+<!ELEMENT lugar (#PCDATA)>
+<!ELEMENT texto (#PCDATA)>
+
+

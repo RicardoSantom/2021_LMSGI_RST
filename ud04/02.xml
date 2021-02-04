@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tierra>
+    <lugar>
+        <continente>Europa</continente>
+        <pais>Alemania</pais>
+         <capital>Berlin</capital>
+    </lugar>
+    <lugar>
+        <continente>America</continente>
+        <pais>Argentina</pais>
+         <capital>Buenos Aires</capital>
+    </lugar>
+    <lugar>
+        <continente>America</continente>
+        <pais>Bahamas</pais>
+         <capital>Nassau</capital>
+    </lugar>
+    <lugar>
+        <continente>Asia</continente>
+        <pais>Afganistan</pais>
+         <capital>Kabul</capital>
+    </lugar>
+    <lugar>
+        <continente>Asia</continente>
+        <pais>Arabia Saudita</pais>
+         <capital>Riad</capital>
+    </lugar>
+</tierra>

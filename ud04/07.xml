@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE grupo SYSTEM '07.dtd'>
+
+<grupo>
+    <estudiante cod="E1" idref="E2 E3">
+        Juan
+    </estudiante>
+    <estudiante cod="E2">
+        Marcos
+    </estudiante>
+    <estudiante cod="E3">
+        Javi
+    </estudiante>
+    <estudiante cod="E4" idref="E2">
+        Antonio
+    </estudiante>
+</grupo>

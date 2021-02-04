@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE horario SYSTEM '04.dtd'>
+<horario>
+    <dias>
+        <lunes>
+            <hora1>
+                <tramo>8:30-9:20</tramo>
+                <profesor>Marcos Unzueta</profesor>
+                <asignatura>Entornos de Desarrollo</asignatura>
+            </hora1>
+            <hora2>
+                <tramo>9:20-10:10</tramo>
+                <profesor>Natividad Crespo</profesor>
+                <asignatura>Sistemas Informaticos</asignatura>
+            </hora2>
+            <hora3>
+                <tramo>10:10-11:00</tramo>
+                <profesor>Natividad Crespo</profesor>
+                <asignatura>Sistemas Informaticos</asignatura>
+            </hora3>
+            <hora4>
+                <tramo>11:00-11:50</tramo>
+                <profesor>Ambrosio Casado</profesor>
+                <asignatura>Programacion</asignatura>
+            </hora4>
+            <hora5>
+                <tramo>12:15-13:05</tramo>
+                <profesor>Ambrosio Casado</profesor>
+                <asignatura>Programacion</asignatura>
+            </hora5>
+            <hora6>
+                <tramo>13:05-13:55</tramo>
+                <profesor>Maria del Cielo Alejo</profesor>
+                <asignatura>Fol</asignatura>
+            </hora6>
+        </lunes>
+        <martes>
+             <hora1>
+                <tramo>8:30-9:20</tramo>
+                <profesor>Hermelinda Ramos</profesor>
+                <asignatura>Bases de Datos</asignatura>
+            </hora1>
+            <hora2>
+                <tramo>9:20-10:10</tramo>
+                <profesor>Hermelinda Ramos</profesor>
+                <asignatura>Bases de Datos</asignatura>
+            </hora2>
+            <hora3>
+                <tramo>10:10-11:00</tramo>
+                <profesor>Ambrosio Casado</profesor>
+                <asignatura>Programacion</asignatura>
+            </hora3>
+            <hora4>
+                <tramo>11:00-11:50</tramo>
+                <profesor>Ambrosio Casado</profesor>
+                <asignatura>Programacion</asignatura>
+            </hora4>
+            <hora5>
+                <tramo>12:15-13:05</tramo>
+                <profesor>Amor Rodriguez</profesor>
+                <asignatura>Lenguaje de Marcas</asignatura>
+            </hora5>
+            <hora6>
+                <tramo>13:05-13:55</tramo>
+                <profesor>Amor Rodriguez</profesor>
+                <asignatura>Lenguaje de Marcas</asignatura>
+            </hora6>
+        </martes>
+        <miercoles>
+            <hora1>
+                <tramo>8:30-9:20</tramo>
+                <profesor>Ambrosio Casado</profesor>
+                <asignatura>Programacion</asignatura>
+            </hora1>
+            <hora2>
+                <tramo>9:20-10:10</tramo>
+                <profesor>Ambrosio Casado</profesor>
+                <asignatura>Programacion</asignatura>
+            </hora2>
+            <hora3>
+                <tramo>10:10-11:00</tramo>
+                <profesor>Maria del Cielo Alejo</profesor>
+                <asignatura>Fol</asignatura>
+            </hora3>
+            <hora4>
+                <tramo>11:00-11:50</tramo>
+                <profesor>Hermelinda Ramos</profesor>
+                <asignatura>Bases de Datos</asignatura>
+            </hora4>
+            <hora5>
+                <tramo>12:15-13:05</tramo>
+                <profesor>Hermelinda Ramos</profesor>
+                <asignatura>Bases de Datos</asignatura>
+            </hora5>
+            <hora6>
+                <tramo>13:05-13:55</tramo>
+                <profesor>Marcos Unzueta</profesor>
+                <asignatura>Entornos de Desarrollo</asignatura>
+            </hora6>
+        </miercoles>
+        <jueves>
+            <hora1>
+                <tramo>8:30-9:20</tramo>
+                <profesor>Amor Rodriguez</profesor>
+                <asignatura>Lenguaje de Marcas</asignatura>
+            </hora1>
+            <hora2>
+                <tramo>9:20-10:10</tramo>
+                <profesor>Amor Rodriguez</profesor>
+                <asignatura>Lenguaje de Marcas</asignatura>
+            </hora2>
+            <hora3>
+                <tramo>10:10-11:00</tramo>
+                <profesor>Ambrosio Casado</profesor>
+                <asignatura>Programacion</asignatura>
+            </hora3>
+            <hora4>
+                <tramo>11:00-11:50</tramo>
+                <profesor>Ambrosio Casado</profesor>
+                <asignatura>Programacion</asignatura>
+            </hora4>
+            <hora5>
+                <tramo>12:15-13:05</tramo>
+                <profesor>Natividad Crespo</profesor>
+                <asignatura>Sistemas Informaticos</asignatura>
+            </hora5>
+            <hora6>
+                <tramo>13:05-13:55</tramo>
+                <profesor>Natividad Crespo</profesor>
+                <asignatura>Sistemas Informaticos</asignatura>
+            </hora6>
+        </jueves>
+        <viernes>
+             <hora1>
+                <tramo>8:30-9:20</tramo>
+                <profesor>Marcos Unzueta</profesor>
+                <asignatura>Entornos de Desarrollo</asignatura>
+            </hora1>
+            <hora2>
+                <tramo>9:20-10:10</tramo>
+                <profesor>Natividad Crespo</profesor>
+                <asignatura>Sistemas Informaticos</asignatura>
+            </hora2>
+            <hora3>
+                <tramo>10:10-11:00</tramo>
+                <profesor>Natividad Crespo</profesor>
+                <asignatura>Sistemas Informaticos</asignatura>
+            </hora3>
+            <hora4>
+                <tramo>11:00-11:50</tramo>
+                <profesor>Maria del Cielo Alejo</profesor>
+                <asignatura>Fol</asignatura>
+            </hora4>
+            <hora5>
+                <tramo>12:15-13:05</tramo>
+                <profesor>Hermelinda Ramos</profesor>
+                <asignatura>Bases de Datos</asignatura>
+            </hora5>
+            <hora6>
+                <tramo>13:05-13:55</tramo>
+                <profesor>Hermelinda Ramos</profesor>
+                <asignatura>Bases de Datos</asignatura>
+            </hora6>
+        </viernes>
+    </dias>
+</horario>
