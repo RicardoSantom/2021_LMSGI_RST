@@ -1,42 +1,42 @@
 @font-face{
-	font-family . Goldman, cursive;
-	src: url(../fonts/Goldman-Boldman-Bold,ttf);
-	}
-	@font-face{
-	font-family . Goldman, cursive;
-	src: url(../fonts/Goldman-Regular,ttf);
-	}
-	@font-face{
-	font-family . Goldman, cursive;
-	src: url(../fonts/ArchitectsDaughter-Regular,ttf);
-	}
-	@font-face{
-	font-family . FrederickattheGreat, cursive;
-	src: url(../fonts/FrederickattheGreat-Regular,ttf);
-	}
-	@font-face{
-	font-family . Parisienne, cursive;
-	src: url(../fonts/Parisienne-Regular,ttf);
-	}
-	body{
-		font-family:FrederickattheGreat,cursive;
-		background-image: url('../images/Le_petit_prince.png');
-		background-repeat:no-repeat;
-		background-position:top right;
-		margin-right:300px;
-	}
+font-family . Goldman, cursive;
+src: url(../fonts/Goldman-Boldman-Bold,ttf);
+}
+@font-face{
+font-family . Goldman, cursive;
+src: url(../fonts/Goldman-Regular,ttf);
+}
+@font-face{
+font-family . Goldman, cursive;
+src: url(../fonts/ArchitectsDaughter-Regular,ttf);
+}
+@font-face{
+font-family . FrederickattheGreat, cursive;
+src: url(../fonts/FrederickattheGreat-Regular,ttf);
+}
+@font-face{
+font-family . Parisienne, cursive;
+src: url(../fonts/Parisienne-Regular,ttf);
+}
+body{
+	font-family:FrederickattheGreat,cursive;
+	background-image: url('../images/Le_petit_prince.png');
+	background-repeat:no-repeat;
+	background-position:top right;
+	margin-right:300px;
+}
 
 h1{
-	font-weight:bold;
-	text-transform:capitalize;
-	font-size:3em;
-	color:Crimson;
-	text-decoration:underline;
-	text-decoration-style:double;
-	letter-spacing:5px;
-	font-style:oblique;
-	font-family:FrederickattheGreat-Regular;
-	}
+font-weight:bold;
+text-transform:capitalize;
+font-size:3em;
+color:Crimson;
+text-decoration:underline;
+text-decoration-style:double;
+letter-spacing:5px;
+font-style:oblique;
+font-family:FrederickattheGreat-Regular;
+}
 	p{
 		background-color: Crimson;
 		font-size: 2em;

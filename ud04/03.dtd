@@ -1,7 +1,14 @@
+<!DOCTYPE mail [
+    <!ELEMENT remitente (#PCDATA)>
+    <!ELEMENT destinatario (#PCDATA)>
+    <!ELEMENT asunto (#PCDATA)>
+    <!ELEMENT mensaje (#PCDATA)>
+    <!ELEMENT fecha EMPTY>
+    <!ELEMENT fichero (#PCDATA)>
+    <!ELEMENT mail (remitente, destinatario+, fecha, asunto?, mensaje?, fichero *)>
+    <!ATTLIST fecha dia CDATA #REQUIRED>
+    <!ATTLIST fecha mes CDATA #REQUIRED>
+    <!ATTLIST fecha anyo CDATA #REQUIRED>
+    <ATTLIST fichero tipo CDATA #REQUIRED>
 
-<!ELEMENT dia (#PCDATA)>
-<!ELEMENT mes (#PCDATA)>
-<!ELEMENT anyo (#PCDATA)>
-<!ELEMENT fecha (dia, mes, anyo)>
-<!ELEMENT hechoshistoricos (descripcion, fecha)>
-<!ELEMENT hechos (hechoshistoricos*)>
+]>
