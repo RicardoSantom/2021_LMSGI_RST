@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hechos SYSTEM '03.1.dtd'>
+<hechos>
+    <hechoshistoricos>
+        <descripcion>Se funda Youtube</descripcion>
+        <fecha dia='15' mes='2' anyo='2005'/>
+    </hechoshistoricos>
+    <hechoshistoricos>
+        <descripcion>Se funda Google</descripcion>
+        <fecha dia='4' mes='9' anyo='1998'/>
+    </hechoshistoricos>
+    <hechoshistoricos>
+        <descripcion>Se funda Facebook</descripcion>
+        <fecha dia='4' mes='2' anyo='2004'/>
+    </hechoshistoricos>
+</hechos>   

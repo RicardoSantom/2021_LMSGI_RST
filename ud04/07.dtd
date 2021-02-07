@@ -2,5 +2,7 @@
 
 <!ELEMENT grupo (estudiante*)>
 <!ELEMENT estudiante (#PCDATA)>
-<!ATTLIST estudiante cod ID #REQUIRED
-                     idref IDREFS #IMPLIED>
+<!ATTLIST estudiante codEstudiante ID #REQUIRED
+                        codTutor1   IDREF #IMPLIED
+                        codTutor2   IDREF #IMPLIED
+                        codTutor3   IDREF #IMPLIED>

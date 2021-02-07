@@ -1,9 +1,11 @@
-java::after{
+letrero{
     color:red;
+    font-size: 20px;
+    border: 2px;
+    border-color: red;
+    border-style: solid;
 }
-html::before{
-    color:red;
-}
+
 codigo{
     white-space:pre;
 }

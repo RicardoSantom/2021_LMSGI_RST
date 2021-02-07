@@ -2,48 +2,65 @@
 <?xml-stylesheet type="text/css" href="06.css" ?>
 <!DOCTYPE codigo [
 <!ELEMENT codigo (lenguaje)>
-<!ELEMENT lenguaje (java, html)>
+<!ELEMENT lenguaje (letrero, java, html)>
+<!ELEMENT letrero (#PCDATA)>
 <!ELEMENT html (#PCDATA)>
 <!ELEMENT java (#PCDATA)>
 ]>
 <codigo>
     <lenguaje>
+        <letrero>JAVA</letrero>
         <java>
-         JAVA
             <![CDATA[
             
-            
-            
-               #include<stdio.h>
-               int main()
-               {
-                float nota;
-                printf(\n Introduzca nota(real): ";
-                scanf("%f",&nota);
-                if(5<=nota9
-                    printf("\n APROBADO");
-                return 0;
-                }
+               import java.util.Scanner;
+public class E01{
+	public static void main(String[]args){
+		Scanner teclado=new Scanner(System.in);
+		
+		int numero;
+		float media;
+		float acumulador=0;
+		int contador=0;
+		
+		System.out.println("Introduzca numeros enteros: ");
+		while(!teclado.hasNextInt()){
+			System.out.println("Error: ");
+			System.out.println("Introduzca numeros enteros: ");
+			teclado.nextLine();	
+		}	numero=teclado.nextInt();
+			
+			while(numero>0){
+                            acumulador+=numero;
+                            contador++;
+                            System.out.println("Introduzca numeros enteros: ");
+                            while(!teclado.hasNextInt()){
+                                teclado.nextLine();
+				System.out.println("Introduzca numeros enteros: ");
+				}numero=teclado.nextInt();	
+		}
+			media=acumulador/contador;
+			System.out.println(media);
+	}
+}        
             ]]>
         </java>
-        <html>
-         HTML
-            
-            
-            
+        <letrero>HTML</letrero>
+        <html> 
             <![CDATA[
-            
-            
-            
-            
             
                 <!DOCTYPE html>
                 <html>
                 <body>
                 
-                <h1>My First Heading</h1>
-                
-                <p>My first paragraph.>/p>
+                    <h1>Esto es un título</h1>
+                    <ul>
+                        <li>Uno</li>
+                        <li>Dos</li>
+                        <li>Tres</li>
+                    </ul>
+                    
+                    <p>Esto es una entrada de texto</p>
                 
                 </body>
                 </html>

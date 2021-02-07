@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT fecha EMPTY>
+    <!ATTLIST fecha dia CDATA #REQUIRED
+                     mes CDATA #REQUIRED
+                    anyo CDATA #REQUIRED>
+    <!ELEMENT hechoshistoricos (descripcion, fecha)>
+    <!ELEMENT hechos (hechoshistoricos*)>
+
+    
+    
+    

@@ -2,16 +2,16 @@
 <!DOCTYPE grupo SYSTEM '07.dtd'>
 
 <grupo>
-    <estudiante cod="E1" idref="E2 E3">
+    <estudiante codEstudiante="E1" codTutor1="E2" codTutor2="E3">
         Juan
     </estudiante>
-    <estudiante cod="E2">
+    <estudiante codEstudiante="E2">
         Marcos
     </estudiante>
-    <estudiante cod="E3">
+    <estudiante codEstudiante="E3">
         Javi
     </estudiante>
-    <estudiante cod="E4" idref="E2">
+    <estudiante codEstudiante="E4" codTutor3="E2">
         Antonio
     </estudiante>
 </grupo>

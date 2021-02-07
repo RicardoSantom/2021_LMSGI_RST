@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tierra SYSTEM '02.1.dtd'>
+<tierra>
+    <lugar>
+        <continente>Europa</continente>
+        <pais nombrePais='Alemania'></pais>
+         <capital>Berlin</capital>
+    </lugar>
+    <lugar>
+        <continente>America</continente>
+        <pais nombrePais='Argentina'></pais>
+         <capital>Buenos Aires</capital>
+    </lugar>
+    <lugar>
+        <continente>America</continente>
+        <pais nombrePais='Bahamas'></pais>
+         <capital>Nassau</capital>
+    </lugar>
+    <lugar>
+        <continente>Asia</continente>
+        <pais nombrePais='Afganistan'></pais>
+         <capital>Kabul</capital>
+    </lugar>
+    <lugar>
+        <continente>Asia</continente>
+        <pais nombrePais='Arabia_Saudita'></pais>
+         <capital>Riad</capital>
+    </lugar>
+</tierra>
