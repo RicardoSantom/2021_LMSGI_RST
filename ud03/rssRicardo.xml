@@ -27,7 +27,7 @@
 			<hour>8</hour>
 		</skipHours>
 		<item>
-			<title>Practica nº10</title>
+			<title>UNIDAD 2-Practica nº10</title>
 			<link>http://192.168.2.102/ud02/10/index.html</link>
 			<description>En esta práctica aplicamos estilos con CSS a una tabla.<![CDATA[<h3>Aplicando estilos
 				a una tabla html con css</h3>]]>
@@ -39,7 +39,7 @@
 			<guid isPermaLink="true">http://192.168.2.102/ud02/10/index.html</guid>
 		</item>
 		<item>
-			<title>Practica nº11</title>
+			<title>UNIDAD 2-Practica nº11</title>
 			<link>http://192.168.2.102/ud02/11/index.html</link>
 			<description>En esta práctica aplicamos estilos con CSS a listas. También vemos como posicionar
 				texto sobre una imagen.<![CDATA[<h3>Posicionamiento de texto html sobre imagen con css</h3>]]>
@@ -51,18 +51,18 @@
 			<guid isPermaLink="true">http://192.168.2.102/ud02/11/index.html</guid>
 		</item>
 		<item>
-			<title>Practica nº12</title>
+			<title>UNIDAD 2-Practica nº12</title>
 			<link>http://192.168.2.102/ud02/12/index.html</link>
 			<description>Practicamos con div`s y como posicionarlos en esta práctica<![CDATA[<h3>Posicionando
 				div`s con css</h3>]]></description>
-			<category>Educación</category>
+			<category>UNIDAD 2-Educación</category>
 			<pubDate>Mon, 18 Jan 2021 22:50:00 +0100</pubDate>
 			<author>ricardo.santom@educa.jcyl.es (Uno que pasaba por alli)</author>	
 			<enclosure url="http://192.168.2.102/images/practica12.png" length="10642" type="image/png"></enclosure>			
 			<guid isPermaLink="true">http://192.168.2.102/ud02/12/index.html</guid>
 		</item>
 		<item>
-			<title>Practica nº13</title>
+			<title>UNIDAD 2-Practica nº13</title>
 			<link>http://192.168.2.102/ud02/13/index.html</link>
 			<description>En esta ocasión, probamos posicionamiento de texto e imagen y aplicamos estilo de 
 				edición periodístico.<![CDATA[<h3>Con css aplico estilo periodístico a una página html</h3>]]>
@@ -74,7 +74,7 @@
 			<guid isPermaLink="true">http://192.168.2.102/ud02/13/index.html</guid>
 		</item>
 		<item>
-			<title>Practica nº14</title>
+			<title>UNIDAD 2-Practica nº14</title>
 			<link>http://192.168.2.102/ud02/14/index.html</link>
 			<description>Con CSS aplicamos estilo a una lista de los libros más vendidos.<![CDATA[<h3>Aplicando estilos
 				a una tabla html con css</h3>]]>
@@ -84,6 +84,20 @@
 			<author>ricardo.santom@educa.jcyl.es (Gandalf)</author>
 			<enclosure url="http://192.168.2.102/images/practica14.png" length="91347" type="image/png"></enclosure>
 			<guid isPermaLink="true">http://192.168.2.102/ud02/14/index.html</guid>
+		</item>
+	</channel>
+	<channel>
+		<item>
+			<title>UNIDAD 4-Practica nº1</title>
+			<link>http://192.168.2.102/ud04/01.xml</link>
+			<description>Práctica 1 unidad 4.Trabajando xml<![CDATA[<h3>Primera práctica de xml previa introducción de 
+			dtd</h3>]]>
+			</description>
+			<category>xml</category>
+			<pubDate>Mon, 08 Feb 2021 23:00:00 +0100</pubDate>
+			<author>ricardo.santom@educa.jcyl.es (Legolas)</author>
+			<enclosure url="http://192.168.2.102/images/imagenPractica01.png" length="91347" type="image/png"></enclosure>
+			<guid isPermaLink="true">http://192.168.2.102/ud04/01.xml</guid>
 		</item>
 	</channel>
 </rss>
