@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<mail
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='essquema1.xsd'>
+    <remitente>Pedro@gmail.com</remitente>
+    <destinatario>Perico@gmail.com</destinatario>
+    <fecha>
+        <dia>5</dia>
+        <mes>2</mes>
+        <anyo>2021</anyo>
+    </fecha>
+</mail>
