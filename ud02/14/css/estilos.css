@@ -1,21 +1,124 @@
-* {
-	box-sizing: border-box;
-	margin:0px;
-	padding:0px;
-	border:3px black;
+@font-face{
+  font-family: "Fontawesome";
+  src: url("../fonts/webfonts/fa-solid-900.ttf");
 }
-<<<<<<< Updated upstream
-=======
+@font-face{
+  font-family: "Goldman";
+  src: url("../fonts/Goldman-Regular.ttf");
+}
+@font-face{
+  font-family: "Goldman";
+  src: url("../fonts/Goldman-Bold.ttf");
+}
+﻿*{
+  box-sizing: border-box;
+}
 
->>>>>>> Stashed changes
-ol li{
-	background-color:grey;
-	width:25%;
+body{
+  font-family:cursive;
+  font-size: 14px;
+  font-style:oblique;
+}
+
+nav li{
+    display: inline-block;
+    padding: 10px;
+	text decoration:none;
+ 
+} 
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav h2{
+	color:black;
+}
+.menu{
+     text-align: center;
+     background-color: dimgrey;
+   }
+.casa{
 	display:inline-block;
 	float:left;
+}
+   /*Para que funcione el color en el borde, tengo que poner el argumento solid*/
+#vendidos{
+	font-size:30px;
+	border: 3px rgb(148, 9, 9) solid;
+    text-align: center;
+    padding: 15px;
+	margin-top:5px;
+	color:rgb(148, 9, 9);
+}
+h2{
+    letter-spacing: 5px;
+    color:rgb(148, 9, 9);
+}
+nav li:before{
+    padding: 10px;
+    font-size: 20px;
+	padding-top:20px;
+}
+nav li:nth-child(1):before{
+	content: " \f015 ";
+	font-family:'FontAwesome';
+	display:inline-block;
+	float:left;}
+nav li:nth-child(2)::before{
+	 content: " \f022 ";
+	 font-family:'FontAwesome';
+	 display-block:inline;
+	float:left;}
+nav li:nth-child(3)::before{
+	content: " \f007 ";
+	font-family:'FontAwesome';
+	display:inline;
+	float:left;}
+nav li:nth-child(4)::before{
+	content: " \f128 ";
+	font-family:'FontAwesome';
+	display:inline;
+	float:left;}
+ .columna1{
+	float: left;
+	/*height: 700px;*/
+	margin-right: 10px;
+	width: 20%;
+	margin-left:-30px;
+	margin-top:-20px;
+}
+.columna1 a:hover{
+  font-size: 16px;
+  color: maroon;
+}
+.columna2{
+  width:70%;
+  float:right;
+  padding: 10px;
+  padding-right:130px;
+  margin-top:-20px;
+}
+.principal:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer p{
+  background-color: dimgrey;
+  padding: 10px;
+ text-align: center;
 
 }
-a{
-	color:black;
-	font-family:'fa-brands';
-	}
+.columna1 li{
+  padding: 15px;
+  list-style: none;
+  text-decoration: none;
+  background-color: dimgrey;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.columna1 a{
+  text-decoration: none;
+  color: white;
+}
