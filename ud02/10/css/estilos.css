@@ -19,7 +19,7 @@ tbody tr:nth-child(2n+1) {
 }
 tbody tr:nth-child(2n) {
 	background-color: lightblue;
-	font-family:'Goldman-Bold';
+	font-family:'Goldman';
 }
 th:hover, td:hover {
 	background-color:#A64B00;
