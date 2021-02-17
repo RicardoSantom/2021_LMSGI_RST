@@ -10,7 +10,7 @@
   font-family: "Goldman";
   src: url("../fonts/Goldman-Bold.ttf");
 }
-﻿*{
+﻿body{
   box-sizing: border-box;
 }
 
@@ -23,7 +23,7 @@ body{
 nav li{
     display: inline-block;
     padding: 10px;
-	text decoration:none;
+	text-decoration:none;
  
 } 
 nav a{
@@ -67,7 +67,7 @@ nav li:nth-child(1):before{
 nav li:nth-child(2)::before{
 	 content: " \f022 ";
 	 font-family:'FontAwesome';
-	 display-block:inline;
+	 display:inline-block;
 	float:left;}
 nav li:nth-child(3)::before{
 	content: " \f007 ";

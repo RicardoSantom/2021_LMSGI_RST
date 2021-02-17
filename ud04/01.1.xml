@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Queda comentado el dtd para poder hacer el xsd
 <!DOCTYPE mail [
     <!ELEMENT remitente (#PCDATA)>
     <!ELEMENT destinatario (#PCDATA)>
@@ -11,12 +12,14 @@
     <!ATTLIST fecha mes CDATA #REQUIRED>
     <!ATTLIST fecha anyo CDATA #REQUIRED>
     <!ATTLIST fichero tipo CDATA #REQUIRED>
-    <!--lOS ATRIBUTOS TAMBIEN SE PUDEN DECLARAR SEGUIDOS
+    lOS ATRIBUTOS TAMBIEN SE PUDEN DECLARAR SEGUIDOS
     <!ATTLIST fecha dia CDATA #REQUIRED
                      mes CDATA #REQUIRED
-                    anyo CDATA #REQUIRED>-->
-]>
-<mail>
+                    anyo CDATA #REQUIRED>
+]>-->
+<mail
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='01.1.xsd'>
     <remitente>peric@mail.com</remitente>
     <destinatario>anda@gmail.com</destinatario>
     <destinatario>esta@gmail.com</destinatario>

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mail>
+<mail
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='01.xsd'>
     <remitente>peric@mail.com</remitente>
     <destinatario>anda@gmail.com</destinatario>
     <destinatario>esta@gmail.com</destinatario>
     <fecha>
        <dia>15</dia>
-        <mes>01</mes>
-        <anyo>2021</anyo>
+       <mes>01</mes>
+       <anyo>2021</anyo>
     </fecha>
     <asunto>Prueba de mensaje</asunto>
     <mensaje>Nada nuevo bajo el sol</mensaje>
