@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE grupo SYSTEM '07.dtd'>
-
-<grupo>
+<!DOCTYPE grupo [
+<!ELEMENT grupo (estudiante)*>
+<!ATTLIST grupo 
+    xmlns:xsi CDATA #IMPLIED 
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+>
+<!ELEMENT estudiante (#PCDATA)>
+<!ATTLIST estudiante 
+ codEstudiante CDATA #REQUIRED
+ codTutor1 CDATA #IMPLIED
+ codTutor2 CDATA #IMPLIED
+ codTutor3 CDATA #IMPLIED>
+]>
+<grupo xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+       xsi:noNamespaceSchemaLocation='07.xsd'>
     <estudiante codEstudiante="E1" codTutor1="E2" codTutor2="E3">
         Juan
     </estudiante>

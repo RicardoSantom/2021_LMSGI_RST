@@ -22,8 +22,8 @@
     xsi:noNamespaceSchemaLocation='01.1.xsd'>
     <remitente>peric@mail.com</remitente>
     <destinatario>anda@gmail.com</destinatario>
-    <destinatario>esta@gmail.com</destinatario>
-    <fecha dia="15" mes="01" anyo="2021"/>
+
+    <fecha dia="---15" mes="--01" anyo="2021"/>
     <asunto>Prueba de mensaje</asunto>
     <mensaje>Nada nuevo bajo el sol</mensaje>
     <fichero tipo="application/pdf">informe.pdf</fichero>
