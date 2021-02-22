@@ -14,11 +14,59 @@ and open the template in the editor.
             <xs:element name='modulos' maxOccurs='unbounded'>
                 <xs:complexType>
                     <xs:simpleContent>
-                        <xs:element name='modulo' type='xs:string'/>
-                        <xs:extension base='xs:string'>
-                            <xs:attribute name='codM' type='ID'>
-                        </xs:extension>
+                        <xs:element name='modulo' type='xs:string'>
+                            <xs:simpleType>
+                                <xs:extension base='xs:string'>
+                                     <xs:attribute name='codM' type='xs:ID'/>
+                                 </xs:extension>
+                            </xs:simpleType>
+                        </xs:element>
                     </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+             <xs:element name='profesores' maxOccurs='unbounded'>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:element name='profesor' type='xs:string'>
+                            <xs:simpleType>
+                                <xs:extension base='xs:string'>
+                                    <xs:attribute name='codP' type='xs:ID'/>
+                                </xs:extension>
+                            </xs:simpleType>
+                        </xs:element>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+             <xs:element name='imparte' maxOccurs='unbounded'>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:element name='asignatura' type='xs:string'>
+                            <xs:complexType>
+                                <xs:extension base='xs:string'>
+                                    <xs:attribute name='codP' type='xs:ID'/>
+                                    <xs:attribute name='codM' type='xs:ID'/>
+                                </xs:extension>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name='grupo' type='xs:string'>
+                <xs:complexType>
+                    <xs:attribute name='idgrupo' type='xs:string'/>
+                    <xs:attribute name='codT' type='xs:string'/>
+                    <xs:element name='hora' type='xs:string' minOccurs="0">
+                        <xs:complexType>
+                            <xs:attribute name='entrada' type='xs:string'/>
+                            <xs:attribute name='salida' type='xs:string'/>
+                            <xs:element name='dia_sem' type='xs:string'>
+                                <xs:complexType>
+                                    <xs:attribute name='dia'/>
+                                     <xs:attribute name='num'/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:complexType>
+                    </xs:element>
                 </xs:complexType>
             </xs:element>
         </xs:sequence>

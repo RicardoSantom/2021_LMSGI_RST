@@ -33,7 +33,7 @@
     num (1|2)  "1" >
 ]>
 <horario xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
-       xsi:noNamespaceSchemaLocation='10.xsd' curso='2020/21'>
+       xsi:noNamespaceSchemaLocation='10.xsd'>
     <modulos>
         <modulo codM='EDD'>Entornos de Desarrollo</modulo>
         <modulo codM='LMSGI'>Lenguaje de Marcas</modulo>
