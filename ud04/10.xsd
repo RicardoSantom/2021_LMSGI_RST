@@ -28,7 +28,7 @@ Fecha: 23/2/2021
                                             <xs:attribute name="codM" use="required">
                                                 <xs:simpleType>
                                                     <xs:restriction base="xs:ID">
-                                                        <xs:pattern value="(EDD|LMSGI|PROG|BBDD|FOL|SINF|XXX)"/>
+                                                        <xs:pattern value="EDD|LMSGI|PROG|BBDD|FOL|SINF|XXX"/>
                                                     </xs:restriction>
                                                 </xs:simpleType>                                                    
                                             </xs:attribute>
