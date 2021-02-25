@@ -4,8 +4,8 @@
 <!ELEMENT horario (modulos,profesores,imparte,grupo*)>
 <!ATTLIST horario
     curso CDATA #IMPLIED
-    xmlns:xsi
-    xsi:noNamespaceSchemaLocation
+    xmlns:xsi CDATA #IMPLIED
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
 >
 <!ELEMENT modulos (modulo)*>
 <!ELEMENT modulo (#PCDATA)>
@@ -19,9 +19,7 @@
 <!ELEMENT asignatura EMPTY>
 <!ATTLIST asignatura 
          codM (EDD|LMSGI|PROG|BBDD|FOL|SINF|XXX)  #REQUIRED
-         codProfesor IDREFS #REQUIRED
-         codP IDREFS ""><!--Aquí he declarado el atributo codP para poder incluirlo en
-                            asinatura. Y en el xml te comento el porqué.-->
+         codProfesor IDREFS #REQUIRED>
 <!ELEMENT grupo (hora)*>
 <!ATTLIST grupo
     idgrupo (DAW1|DAW2|SMR2|SMR1) #REQUIRED
@@ -36,7 +34,7 @@
     num (1|2)  "1" >
 ]>
 <horario xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
-       xsi:noNamespaceSchemaLocation='10.xsd'>
+         xsi:noNamespaceSchemaLocation='10.xsd'>
     <modulos>
         <modulo codM='EDD'>Entornos de Desarrollo</modulo>
         <modulo codM='LMSGI'>Lenguaje de Marcas</modulo>
@@ -53,14 +51,13 @@
         <profesor codP='MAM'>María del Cielo Alejo Mulas</profesor>
         <profesor codP='NCB'>Natividad Crespo Belver</profesor>
     </profesores>
-    <imparte><!--Hola Amor. En asignatura he dedidido declarar en todos codProfesor y codP aunque sea redundante.
-                Lo hago de esta manera para que en LMSGI podais aparecer Meli y tú.-->
-        <asignatura codM='EDD' codProfesor='MUP' codP='MUP'></asignatura>
-        <asignatura codM='LMSGI' codProfesor='ARN' codP='HRO'></asignatura>
-        <asignatura codM='PROG' codProfesor='ACF' codP='ACF'></asignatura>
-        <asignatura codM='BBDD' codProfesor='HRO' codP='HRO'></asignatura>
-        <asignatura codM='FOL' codProfesor='MAM' codP='MAM'></asignatura>
-        <asignatura codM='SINF' codProfesor='NCB' codP='NCB'></asignatura>
+    <imparte>
+        <asignatura codM='EDD' codProfesor='MUP'></asignatura>
+        <asignatura codM='LMSGI' codProfesor='ARN'></asignatura>
+        <asignatura codM='PROG' codProfesor='ACF'></asignatura>
+        <asignatura codM='BBDD' codProfesor='HRO'></asignatura>
+        <asignatura codM='FOL' codProfesor='MAM'></asignatura>
+        <asignatura codM='SINF' codProfesor='NCB'></asignatura>
     </imparte>
     <grupo idgrupo='DAW1' codT='MUP'>
         <hora entrada='08:30' salida='09:20'>          
