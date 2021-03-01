@@ -15,8 +15,7 @@
 <!ATTLIST asignatura 
          codM (EDD|LMSGI|PROG|BBDD|FOL|SINF|XXX)  #REQUIRED
          codProfesor IDREFS #REQUIRED
-         codP IDREFS ""><!--Aquí he declarado el atributo codP para poder incluirlo en
-                            asinatura. Y en el xml te comento el porqué.-->
+         codP IDREFS "">
 <!ELEMENT grupo (hora)*>
 <!ATTLIST grupo
     idgrupo (DAW1|DAW2|SMR2|SMR1) #REQUIRED

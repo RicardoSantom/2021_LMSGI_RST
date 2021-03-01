@@ -4,8 +4,6 @@
 <!ELEMENT horario (modulos,profesores,imparte,grupo*)>
 <!ATTLIST horario
     curso CDATA #IMPLIED
-    xmlns:xsi CDATA #IMPLIED
-    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
 >
 <!ELEMENT modulos (modulo)*>
 <!ELEMENT modulo (#PCDATA)>

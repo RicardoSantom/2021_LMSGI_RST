@@ -36,8 +36,7 @@ Fecha: 23/2/2021
                                     </xs:simpleContent>                                        
                                 </xs:complexType>                                 
                             </xs:element>   
-                        </xs:sequence>
-                       
+                        </xs:sequence>   
                     </xs:complexType>
                 </xs:element>
                 <xs:element name="profesores">
