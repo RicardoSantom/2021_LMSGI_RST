@@ -5,6 +5,8 @@ body{
 	background-attachment:fixed;
 	background-size:cover;
 	background-color:#FFDFD3;
+        height: 2040px;
+        width: 100%;
 }
 h1{background-color:lightblue;
 	color:lightyellow;
@@ -37,48 +39,17 @@ a:hover{
 	display:inline-block;
 	float:left;
 	width:33%;
-	height:900px;
+	height:95%;
 }
 .segunda{
 	display:inline-block;
 	float:left;
 	width:33%;
-	height:900px;
+	height:95%;
 }
 .tercera{
 	display:inline-block;
 	float:right;
 	width:33%;
-	height:900px;
+	height:95%;
 }
-
-/*A continuación dejo comentadas las reglas de estilo que afectan a la división en dos div del index
-en la implementación de la página sin estos dos div, estas reglas que siguen son innecesarias.*/
-/*#ud01{
-	display:inline-block;
-	margin-top:50px;
-	padding-left:10px;
-	text-align:center;
-	width:100%;
-}
-#ud02{
-	display:inline-block;
-	margin-top:50px;
-	padding-left:10px;
-	text-align:center;
-	width:100%;
-}
-#ud03{
-	display:inline-block;
-	padding-left:10px;
-	text-align:center;
-	margin-top:50px;
-	width:100%;
-}
-ol a{
-	color:grey;
-}
-ol li{
-	background-color:lightblue;
-}
-ol:hover{color:lightblue;}*/
