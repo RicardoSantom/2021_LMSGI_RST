@@ -1,21 +1,21 @@
 @font-face{
-font-family . Goldman, cursive;
+font-family : Goldman, cursive;
 src: url(../fonts/Goldman-Boldman-Bold,ttf);
 }
 @font-face{
-font-family . Goldman, cursive;
+font-family: Goldman, cursive;
 src: url(../fonts/Goldman-Regular,ttf);
 }
 @font-face{
-font-family . Goldman, cursive;
+font-family : Goldman, cursive;
 src: url(../fonts/ArchitectsDaughter-Regular,ttf);
 }
 @font-face{
-font-family . FrederickattheGreat, cursive;
+font-family : FrederickattheGreat, cursive;
 src: url(../fonts/FrederickattheGreat-Regular,ttf);
 }
 @font-face{
-font-family . Parisienne, cursive;
+font-family: Parisienne, cursive;
 src: url(../fonts/Parisienne-Regular,ttf);
 }
 body{
