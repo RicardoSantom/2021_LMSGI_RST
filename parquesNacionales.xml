@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE parques SYSTEM 'parquesNacionales.dtd'>
+<!--<parques plato='primero'
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='parquesNacionales.xsd'>-->
+<parques>
+    <parqueNacional>
+        <nombre></nombre>
+        <provincia></provincia>
+        <morfología>
+            <extensión></extensión>
+            <tipo></tipo>
+        </morfología>
+        <clima></clima>
+        <biomasa>
+            <poblaciones>
+                <fauna>
+                    <animales>
+                        <nombre></nombre>
+                        <numero></numero>
+                        <proteccion></proteccion>
+                    </animales>
+                </fauna>
+                <flora>
+                    <plantas>
+                        <nombre></nombre>
+                        <densidad></densidad>
+                        <estado></estado>
+                    </plantas>
+                </flora>
+            </poblaciones>
+        </biomasa>
+    </parqueNacional>
+</parques>
+
