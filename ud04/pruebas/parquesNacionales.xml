@@ -10,7 +10,7 @@ xsi:noNamespaceSchemaLocation='parquesNacionales.xsd'>
             <extension unidad='hectareas'>6000</extension>
             <tipo terreno='llano'></tipo>
         </morfologia>
-        <clima predominante='continental'/>
+        <clima predominante='continental'></clima>
         <poblaciones>
             <fauna>
                 <nombre>Lince ibérico</nombre>
@@ -22,10 +22,12 @@ xsi:noNamespaceSchemaLocation='parquesNacionales.xsd'>
                 <densidad>100</densidad>
                 <estado>No amenazada</estado>
             </flora>
-             <fauna>
-                <nombre>Ciervo</nombre>
-                <numero opcion='censado'>6000</numero>
-                <proteccion>No amenazada</proteccion>
+        </poblaciones>
+        <poblaciones>
+           <fauna>
+                <nombre>Lobo ibérico</nombre>
+                <numero opcion='estimado'>9</numero>
+                <proteccion>Testimonial en la zona</proteccion>
             </fauna>
             <flora>
                 <nombre>Eucalipto</nombre>
@@ -41,7 +43,7 @@ xsi:noNamespaceSchemaLocation='parquesNacionales.xsd'>
             <extension unidad='hectareas'>9000</extension>
             <tipo terreno='montaña'></tipo>
         </morfologia>
-        <clima predominante='continental'/>
+        <clima predominante='mediterraneo'></clima>
         <poblaciones>
             <fauna>
                 <nombre>Lince ibérico</nombre>
