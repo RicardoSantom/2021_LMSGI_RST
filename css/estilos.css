@@ -1,49 +1,164 @@
 body{
-	/*Inutili
-	/*background-image:url(../images/images.jfif);
+	background-image:url(../images/textura3.jpg);
 	background-repeat:no-repeat;
-	background-size:2100px auto;*/
+	background-position:center center;
+	background-attachment:fixed;
+	background-size:cover;
 	background-color:#FFDFD3;
-}
-.izquierda{
-	display:inline;
-	float:left;
-	width:25%;
-	height:900px;
-}
-.derecha{
-	display:inline;
-	float:right;
-	width:75%;
-	height:900px;
+        height:2100px;
 }
 h1{background-color:lightblue;
 	color:lightyellow;
-	text-align:center;
-	font-size:60px;
-	margin:10px auto;
+	font-size:30px;
+	margin:5px auto;
 	font-family:fontawesome;
+	width:33%;
+	text-align:center;
 }
 ul{
 	background-color:grey;
 	width:300px;
-	margin-left:30px;
-	margin-right:600px;
 	font-family:cursive;
 	margin:10px auto;
 }
-/*ol{
-	list-style:none;
-}*/
-a{
-	color:lightblue;
+#noticias{
+	background-image:url(../images/captura2.1.png);
+        background-repeat:no-repeat;
+        background-size:350px 150px;
+        background-position:left;
+        margin-left: -50px;
 }
+#tablas{
+        background-image:url(../images/captura2.2.png);
+        background-repeat:no-repeat;
+        background-size:350px 150px;
+        background-position:left;
+        margin-left: -50px;
+}
+#horario{
+        background-image:url(../images/captura2.3.png);
+        background-repeat:no-repeat;
+        background-size:350px 150px;
+        background-position:left;
+        margin-left: -50px;
+}
+#formulario{
+        background-image:url(../images/captura2.4.png);
+        background-repeat:no-repeat;
+        background-size:350px 150px;
+        background-position:left;
+        margin-left: -50px;
+}
+#plantilla{
+        background-image:url(../images/captura2.5.png);
+        background-repeat:no-repeat;
+        background-size:350px 150px;
+        background-position:left;
+        margin-left: -50px;
+}
+#media{
+        background-image:url(../images/captura2.6.png);
+        background-repeat:no-repeat;
+        background-size:350px 150px;
+        background-position:left;
+        margin-left: -50px;
+}
+#colores{
+        background-image:url(../images/captura2.7.png);
+        background-repeat:no-repeat;
+        background-size:350px 150px;
+        background-position:left;
+        margin-left: -50px;
+}
+#dados{
+        background-image:url(../images/captura2.8.png);
+        background-repeat:no-repeat;
+        background-size:350px 150px;
+        background-position:left;
+        margin-left: -50px;
+}
+#principito{
+        background-image:url(../images/captura2.9.png);
+        background-repeat:no-repeat;
+        background-size:350px 150px;
+        background-position:left;
+        margin-left: -50px;
+}
+#tablas-iconos{
+        background-image:url(../images/captura2.10.png);
+        background-repeat:no-repeat;
+        background-size:350px 150px;
+        background-position:left;
+        margin-left: -50px;
+}
+#principito-posicion{
+        background-image:url(../images/captura2.11.png);
+        background-repeat:no-repeat;
+        background-size:350px 150px;
+        background-position:left;
+        margin-left: -50px;
+}
+#curriculum{
+        background-image:url(../images/captura2.12.png);
+        background-repeat:no-repeat;
+        background-size:350px 150px;
+        background-position:left;
+        margin-left: -50px;
+}
+#periodistico{
+        background-image:url(../images/captura2.13.png);
+        background-repeat:no-repeat;
+        background-size:350px 150px;
+        background-position:left;
+        margin-left: -50px;
+}
+#libros{
+        background-image:url(../images/captura2.14.png);
+        background-repeat:no-repeat;
+        background-size:350px 150px;
+        background-position:left;
+        margin-left: -50px;
+}
+.primera ul li{
+    height:150px;
+}
+.segunda ul li{
+    height:150px;
+}
+ul{
+	list-style:none;
+}
+a{
+	color:lightsalmon;
+}
+/*#noticias a{
+    margin-left: 50px;
+}*/
 li:hover{
 	color:lightyellow;
 }
 a:hover{
-	color:lightyellow;
+	color:darkblue;
 }
+.primera{
+	display:inline-block;
+	float:left;
+	width:33%;
+	height:2600px;
+}
+.segunda{
+	display:inline-block;
+	float:left;
+	width:33%;
+	height:2600px;
+}
+.tercera{
+	display:inline-block;
+	float:right;
+	width:33%;
+	height:2600px;
+}
+
 /*A continuación dejo comentadas las reglas de estilo que afectan a la división en dos div del index
 en la implementación de la página sin estos dos div, estas reglas que siguen son innecesarias.*/
 /*#ud01{

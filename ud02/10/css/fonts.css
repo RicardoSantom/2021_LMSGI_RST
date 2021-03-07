@@ -1,3 +1,52 @@
+
+@font-face{
+	font-family:fa-brands;
+	src:url(../fonts/fontawesome/webfonts/fa-brands-400.ttf);
+}
+@font-face{
+	font-family:fa-brands;
+	src:url(fonts/fontawesome/webfonts/fa-brands-400.woff);
+}
+@font-face{
+	font-family:fa-brands;
+	src:url(fonts/fontawesome/webfonts/fa-brands-400.woff2);
+}
+@font-face{
+	font-family:fa-regular;
+	src:url(fonts/fontawesome/webfonts/fa-regular-400.eot);
+}
+@font-face{
+	font-family:fa-regular;
+	src:url(fonts/fontawesome/webfonts/fa-regular-400.ttf);
+}
+@font-face{
+	font-family:fa-regular;
+	src:url(fonts/fontawesome/webfonts/fa-regular-400.woff);
+}
+@font-face{
+	font-family:fa-regular;
+	src:url(fonts/fontawesome/webfonts/fa-regular-400.woff2);
+}
+@font-face{
+	font-family:fa-regular;
+	src:url(fonts/fontawesome/webfonts/fa-solid-900.eot);
+}
+@font-face{
+	font-family:fa-brands;
+	src:url(fonts/fontawesome/webfonts/fa-solid-400.eot);
+}
+@font-face{
+	font-family:fa-solid;
+	src:url(fonts/fontawesome/webfonts/fa-solid-900.ttf);
+}
+@font-face{
+	font-family:fa-solid;
+	src:url(fonts/fontawesome/webfonts/fa-solid-900.woff);
+}
+@font-face{
+	font-family:fa-solid;
+	src:url(fonts/fontawesome/webfonts/fa-solid-900.woff2);
+}
 @font-face{
 	font-family : Goldman;
 	src: url(../fonts/Goldman-Bold.ttf);
@@ -12,7 +61,7 @@
 	}
 	@font-face{
 	font-family : FrederickattheGreat;
-	src: url(../fonts/FrederickatheGreat/FrederickatheGreat-Regular.ttf);
+	src: url(../fonts/FrederickatheGreat-Regular.ttf);
 	}
 	@font-face{
 	font-family : Parisienne;
