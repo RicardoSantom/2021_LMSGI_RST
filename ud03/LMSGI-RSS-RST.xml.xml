@@ -2,7 +2,7 @@
 <rss version="2.0">
     
     <channel>
-        <title>LMSGI-RSS-Ricardo Santiago Tomé</title>
+        <title>LMSGI-RSS-Ricardo Santiago Tomé-UD02</title>
         <link>http://192.168.2.102/index.html</link>
         <description>Documento RSS en el que se puden consultar las prácticas de edición en CSS de Ricardo
             Santiago Tomé. Alumno de 1º de DAW en el IES Los Sauces
@@ -28,6 +28,20 @@
             <hour>8</hour>
         </skipHours>
         <item>
+            <title></title>
+            <link>http://192.168.2.102/index.html</link>
+            <description>ïndice de todas las prácticas.
+            <![CDATA[ïndice general con todas las prácticas de la asignatura 
+                        Lenguaje de marcas y sistemas de gestión de
+                          1ºDAW]]>
+            </description>
+            <category>html,xml,rss,xsd,dtd,css</category>
+            <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
+            <pubDate>Mon, 18 Jan 2021 22:50:00 +0100</pubDate>
+            <enclosure url="http://192.168.2.102/images/index.png"  length="10642" type="image/png"></enclosure>
+            <guid isPermaLink="true">http://192.168.2.102/index.html</guid>
+        </item>
+        <item>
             <title>Practica nº10</title>
             <link>http://192.168.2.102/ud02/10/index.html</link>
             <description>En esta práctica aplicamos estilos con CSS a una tabla.<![CDATA[<h3>Aplicando estilos
@@ -37,6 +51,7 @@
             <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
             <pubDate>Mon, 18 Jan 2021 22:50:00 +0100</pubDate>
             <enclosure url="http://192.168.2.102/images/practica10.png"  length="10642" type="image/png"></enclosure>
+            <![CDATA[<enclosure url="http://192.168.2.102/images/captura2.10.png"  length="10642" type="image/png"></enclosure>]]>
             <guid isPermaLink="true">http://192.168.2.102/ud02/10/index.html</guid>
         </item>
         <item>
@@ -49,6 +64,7 @@
             <category>css</category>
             <author>ricardo.santom@educa.jcyl.es (Perico los Palotes)</author>
             <enclosure url="http://192.168.2.102/images/practica11.png" length="10642" type="image/png"></enclosure>
+            <![CDATA[<enclosure url="http://192.168.2.102/images/captura2.11.png"  length="10642" type="image/png"></enclosure>]]>
             <guid isPermaLink="true">http://192.168.2.102/ud02/11/index.html</guid>
         </item>
         <item>
@@ -59,7 +75,8 @@
             <category>Educación</category>
             <pubDate>Mon, 18 Jan 2021 22:50:00 +0100</pubDate>
             <author>ricardo.santom@educa.jcyl.es (Uno que pasaba por alli)</author>	
-            <enclosure url="http://192.168.2.102/images/practica12.png" length="10642" type="image/png"></enclosure>			
+            <enclosure url="http://192.168.2.102/images/practica12.png" length="10642" type="image/png"></enclosure>
+            <![CDATA[<enclosure url="http://192.168.2.102/images/captura2.12.png"  length="10642" type="image/png"></enclosure>]]>		
             <guid isPermaLink="true">http://192.168.2.102/ud02/12/index.html</guid>
         </item>
         <item>
@@ -72,6 +89,7 @@
             <pubDate>Mon, 18 Jan 2021 22:50:00 +0100</pubDate>
             <author>ricardo.santom@educa.jcyl.es (Juan sin Medio)</author>
             <enclosure url="http://192.168.2.102/images/practica13.png" length="86034" type="image/png"></enclosure>
+            <![CDATA[<enclosure url="http://192.168.2.102/images/captura2.13.png"  length="10642" type="image/png"></enclosure>]]>
             <guid isPermaLink="true">http://192.168.2.102/ud02/13/index.html</guid>
         </item>
         <item>
@@ -84,7 +102,218 @@
             <pubDate>Mon, 18 Jan 2021 22:50:00 +0100</pubDate>
             <author>ricardo.santom@educa.jcyl.es (Gandalf)</author>
             <enclosure url="http://192.168.2.102/images/practica14.png" length="91347" type="image/png"></enclosure>
+            <![CDATA[<enclosure url="http://192.168.2.102/images/captura2.14.png"  length="10642" type="image/png"></enclosure>]]>
             <guid isPermaLink="true">http://192.168.2.102/ud02/14/index.html</guid>
+        </item>
+    </channel>
+    <channel>
+        <title>LMSGI-RSS-Ricardo Santiago Tomé-UD03</title>
+        <link>http://192.168.2.102/index.html</link>
+        <description>Documento RSS en el que se puden consultar las prácticas de edición en CSS de Ricardo
+            Santiago Tomé. Alumno de 1º de DAW en el IES Los Sauces
+        </description>
+        <language>es-es</language>
+        <lastBuildDate>Tue, 09 Mar 2021 22:50:00 +0100</lastBuildDate>
+        <pubDate>Tue, 09 Mar 2021 22:50:00 +0100</pubDate>
+        <copyright>Ricardo Santiago Tomé</copyright>
+        <category>Educación</category>
+        <skipDays>
+            <day>Sunday</day>
+            <day>Saturday</day>
+        </skipDays>
+        <skipHours>
+            <hour>0</hour>
+            <hour>1</hour>
+            <hour>2</hour>
+            <hour>3</hour>
+            <hour>4</hour>
+            <hour>5</hour>
+            <hour>6</hour>
+            <hour>7</hour>
+            <hour>8</hour>
+        </skipHours>
+        <item>
+        <item>
+            <title>UD03 rss.xml</title>
+            <link>http://192.168.2.102/ud03/rss.xml</link>
+            <description>XML índice prácticas en RSS<![CDATA[<h3>primera práctica unidad 03
+                            en RSS</h3>]]>
+            </description>
+            <category>html</category>
+            <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
+            <pubDate>Tue, 09 Mar 2021 22:50:00 +0100</pubDate>
+            <![CDATA[<enclosure url="http://192.168.2.102/images/practica10.png"  length="10642" type="image/png"></enclosure>
+            <enclosure url="http://192.168.2.102/images/captura2.10.png"  length="10642" type="image/png"></enclosure>]]>
+            <guid isPermaLink="true">http://192.168.2.102/ud03/rss.xml</guid>
+        </item>
+        <item>
+            <title>UD 03 atomRicardo.xml</title>
+            <link>http://192.168.2.102/ud03/atomRicardo.xml</link>
+            <description>En esta práctica agregamos prácticas en formato atom.
+                <![CDATA[<h3>En esta práctica agregamos prácticas en formato atom.</h3>]]>
+            </description>
+            <pubDate>Tue, 09 Mar 2021 22:50:00 +0100</pubDate>
+            <category>css</category>
+            <author>ricardo.santom@educa.jcyl.es (Perico los Palotes)</author>
+            <![CDATA[<enclosure url="http://192.168.2.102/images/practica11.png" length="10642" type="image/png"></enclosure>
+            <enclosure url="http://192.168.2.102/images/captura2.11.png"  length="10642" type="image/png"></enclosure>]]>
+            <guid isPermaLink="true">http://192.168.2.102/ud03/atomRicardo.xml</guid>
+        </item>
+        <item>
+            <title>OPML.xml</title>
+            <link>http://192.168.2.102/ud03/OPML.xml</link>
+            <description>Agregación opml en esta práctica<![CDATA[<h3>Agregación opml en esta práctica<</h3>]]></description>
+            <category>Educación</category>
+            <pubDate>Tue, 09 Mar 2021 22:50:00 +0100</pubDate>
+            <author>ricardo.santom@educa.jcyl.es (Uno que pasaba por alli)</author>	
+            <![CDATA[<enclosure url="http://192.168.2.102/images/practica12.png" length="10642" type="image/png"></enclosure>
+            <enclosure url="http://192.168.2.102/images/captura2.12.png"  length="10642" type="image/png"></enclosure>]]>		
+            <guid isPermaLink="true">http://192.168.2.102/ud03/OPML.xml</guid>
+        </item>
+        <item>
+            <title>UD 03 ondaSalix.xml</title>
+            <link>http://192.168.2.102/ud03/ondaSalix.xml</link>
+            <description>Esta es la primera práctica con rss
+                <![CDATA[<h3>Práctica con rss a Onda Salix, radio del IES Los Sauces.</h3>]]>
+            </description>
+            <category>rss,radio,educación</category>
+            <pubDate>Tue, 09 Mar 2021 22:50:00 +0100</pubDate>
+            <author>ricardo.santom@educa.jcyl.es (Juan sin Medio)</author>
+            <![CDATA[<enclosure url="http://192.168.2.102/images/practica13.png" length="86034" type="image/png"></enclosure>
+            <enclosure url="http://192.168.2.102/images/captura2.13.png"  length="10642" type="image/png"></enclosure>]]>
+            <guid isPermaLink="true">http://192.168.2.102/ud03/ondaSalix.xml</guid>
+        </item>
+    </channel>
+        <channel>
+        <title>LMSGI-RSS-Ricardo Santiago Tomé-UD04</title>
+        <link>http://192.168.2.102/index.html</link>
+        <description>Documento RSS en el que se puden consultar las prácticas de edición en xml de Ricardo
+            Santiago Tomé. Alumno de 1º de DAW en el IES Los Sauces
+        </description>
+        <language>es-es</language>
+        <lastBuildDate>Tue, 09 Mar 2021 22:50:00 +0100</lastBuildDate>
+        <pubDate>Tue, 09 Mar 2021 22:50:00 +0100</pubDate>
+        <copyright>Ricardo Santiago Tomé</copyright>
+        <category>xml,educación</category>
+        <skipDays>
+            <day>Sunday</day>
+            <day>Saturday</day>
+        </skipDays>
+        <skipHours>
+            <hour>0</hour>
+            <hour>1</hour>
+            <hour>2</hour>
+            <hour>3</hour>
+            <hour>4</hour>
+            <hour>5</hour>
+            <hour>6</hour>
+            <hour>7</hour>
+            <hour>8</hour>
+        </skipHours>
+        <item>
+        <item>
+            <title>UD04 01.1.xml</title>
+            <link>http://192.168.2.102/ud04/01.1.xml</link>
+            <description>Primera práctica xml<![CDATA[<h3>primera práctica unidad 04
+                            en xml</h3>]]>
+            </description>
+            <category>xml</category>
+            <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
+            <pubDate>Tue, 09 Mar 2021 22:50:00 +0100</pubDate>
+            <![CDATA[<enclosure url="http://192.168.2.102/images/practica10.png"  length="10642" type="image/png"></enclosure>
+            <enclosure url="http://192.168.2.102/images/captura2.10.png"  length="10642" type="image/png"></enclosure>]]>
+            <guid isPermaLink="true">http://192.168.2.102/ud04/01.1.xml</guid>
+        </item>
+        <item>
+            <title>UD 04 01.1.xsd</title>
+            <link>http://192.168.2.102/ud04/01.1.xsd</link>
+            <description>Primera práctica con xsd
+                <![CDATA[<h3>Primera práctica trabajando con espacio de nombres.</h3>]]>
+            </description>
+            <pubDate>Tue, 09 Mar 2021 22:50:00 +0100</pubDate>
+            <category>css</category>
+            <author>ricardo.santom@educa.jcyl.es (Perico los Palotes)</author>
+            <![CDATA[<enclosure url="http://192.168.2.102/images/practica11.png" length="10642" type="image/png"></enclosure>
+            <enclosure url="http://192.168.2.102/images/captura2.11.png"  length="10642" type="image/png"></enclosure>]]>
+            <guid isPermaLink="true">http://192.168.2.102/ud04/01.1.xsd</guid>
+        </item>
+        <item>
+            <title>UD 04 01.xsd</title>
+            <link>http://192.168.2.102/ud04/01.xsd</link>
+            <description>Primera práctica con xsd
+                <![CDATA[<h3>Primera práctica trabajando con espacio de nombres.</h3>]]>
+            </description>
+            <pubDate>Tue, 09 Mar 2021 22:50:00 +0100</pubDate>
+            <category>css</category>
+            <author>ricardo.santom@educa.jcyl.es (Perico los Palotes)</author>
+            <![CDATA[<enclosure url="http://192.168.2.102/images/practica11.png" length="10642" type="image/png"></enclosure>
+            <enclosure url="http://192.168.2.102/images/captura2.11.png"  length="10642" type="image/png"></enclosure>]]>
+            <guid isPermaLink="true">http://192.168.2.102/ud04/01.xsd</guid>
+        </item>
+        <item>
+            <title>UD04 01.xml</title>
+            <link>http://192.168.2.102/ud04/01.xml</link>
+            <description>Primera práctica xml<![CDATA[<h3>primera práctica unidad 04
+                            en xml</h3>]]>
+            </description>
+            <category>xml</category>
+            <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
+            <pubDate>Tue, 09 Mar 2021 22:50:00 +0100</pubDate>
+            <![CDATA[<enclosure url="http://192.168.2.102/images/practica10.png"  length="10642" type="image/png"></enclosure>
+            <enclosure url="http://192.168.2.102/images/captura2.10.png"  length="10642" type="image/png"></enclosure>]]>
+            <guid isPermaLink="true">http://192.168.2.102/ud04/01.xml</guid>
+        </item>
+        <item>
+            <title>UD04 02.1.xml</title>
+            <link>http://192.168.2.102/ud04/02.1.xml</link>
+            <description>Segunda práctica xml<![CDATA[<h3>primera práctica unidad 04
+                            en xml</h3>]]>
+            </description>
+            <category>xml</category>
+            <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
+            <pubDate>Tue, 09 Mar 2021 22:50:00 +0100</pubDate>
+            <![CDATA[<enclosure url="http://192.168.2.102/images/practica10.png"  length="10642" type="image/png"></enclosure>
+            <enclosure url="http://192.168.2.102/images/captura2.10.png"  length="10642" type="image/png"></enclosure>]]>
+            <guid isPermaLink="true">http://192.168.2.102/ud04/02.1.xml</guid>
+        </item>
+        <item>
+            <title>UD04 02.1.dtd</title>
+            <link>http://192.168.2.102/ud04/02.1.xml</link>
+            <description>Primera práctica dtd<![CDATA[<h3>primera práctica dtd
+                            en xml</h3>]]>
+            </description>
+            <category>dtd</category>
+            <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
+            <pubDate>Tue, 09 Mar 2021 22:50:00 +0100</pubDate>
+            <![CDATA[<enclosure url="http://192.168.2.102/images/practica10.png"  length="10642" type="image/png"></enclosure>
+            <enclosure url="http://192.168.2.102/images/captura2.10.png"  length="10642" type="image/png"></enclosure>]]>
+            <guid isPermaLink="true">http://192.168.2.102/ud04/02.1.dtd</guid>
+        </item>
+        <item>
+            <title>UD04 02.xml</title>
+            <link>http://192.168.2.102/ud04/02.xml</link>
+            <description>Segunda práctica xml<![CDATA[<h3>Segunda práctica unidad 04
+                            en xml</h3>]]>
+            </description>
+            <category>xml</category>
+            <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
+            <pubDate>Tue, 09 Mar 2021 22:50:00 +0100</pubDate>
+            <![CDATA[<enclosure url="http://192.168.2.102/images/practica10.png"  length="10642" type="image/png"></enclosure>
+            <enclosure url="http://192.168.2.102/images/captura2.10.png"  length="10642" type="image/png"></enclosure>]]>
+            <guid isPermaLink="true">http://192.168.2.102/ud04/02.xml</guid>
+        </item>
+        <item>
+            <title>UD04 02.xsd</title>
+            <link>http://192.168.2.102/ud04/02.xsd</link>
+            <description>Segunda práctica xsd<![CDATA[<h3>Segunda práctica unidad 04
+                            en xsd</h3>]]>
+            </description>
+            <category>xml</category>
+            <author>ricardo.santom@educa.jcyl.es (Ricardo Santiago Tomé)</author>
+            <pubDate>Tue, 09 Mar 2021 22:50:00 +0100</pubDate>
+            <![CDATA[<enclosure url="http://192.168.2.102/images/practica10.png"  length="10642" type="image/png"></enclosure>
+            <enclosure url="http://192.168.2.102/images/captura2.10.png"  length="10642" type="image/png"></enclosure>]]>
+            <guid isPermaLink="true">http://192.168.2.102/ud04/02.xsd</guid>
         </item>
     </channel>
 </rss>
