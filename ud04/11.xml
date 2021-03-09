@@ -46,7 +46,7 @@
             <nombre>Intel Core i3-7020U</nombre>
             <cache tamanyo="Gb">3</cache>
             <numero>2</numero>
-            <velocidad>5.3</velocidad>
+            <velocidad medida="Ghz">5.3</velocidad>
         </procesador>
         <ram>
             <memoria medida="Gb">32</memoria>

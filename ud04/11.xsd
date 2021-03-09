@@ -18,7 +18,7 @@
                             <xs:element name="referencia">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
-                                        <xs:pattern value="[A-Z]{2}[0-9]{5}"/>
+                                        <xs:pattern value="[A-Z]{2}[0-9]{6}"/>
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
@@ -48,7 +48,15 @@
                                             </xs:complexType>
                                         </xs:element>
                                         <xs:element name="numero" type="xs:byte"/>
-                                        <xs:element name="velocidad" type="xs:decimal"/>
+                                        <xs:element name="velocidad">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="medida" default="Ghz"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
