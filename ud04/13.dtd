@@ -13,7 +13,7 @@
 <!ELEMENT extension (#PCDATA)>
 <!ATTLIST extension 
           unidad (kilometros|hectareas) #REQUIRED>
-<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT tipo EMPTY>
 <!ATTLIST tipo 
           terreno (montaña|litoral|llano|vega|humedal) #IMPLIED>
 <!ELEMENT clima EMPTY>

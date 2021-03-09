@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE parques SYSTEM 'parquesNacionales.dtd'>
+<!DOCTYPE parques SYSTEM '13.dtd'>
 <parques 
 xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
-xsi:noNamespaceSchemaLocation='parquesNacionales.xsd'>
+xsi:noNamespaceSchemaLocation='13.xsd'>
     <parqueNacional>
         <nombre>Cabañeros</nombre>
         <provincia comunidad='Castilla la Mancha'>Ciudad Real</provincia>
